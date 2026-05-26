@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Console - MrBap's Server</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/console.css">
+</head>
+
+<body>
+    <div id="menu">
+        <button class="menubtn">Console</button>
+        <button class="menubtn">Files<a href="remote.mrbap.net/files"></a></button>
+    </div>
+    <div id="consolecontainer">
+        <div id="btnsdiv">
+            <div id="terminalselector">
+            </div>
+            <button id="launchkill" onclick="newterm()">New</button>
+        </div>
+        <p id="output"></p>
+        <div id="command-field">
+            <input type="text" id="cmdtextfield">
+            <button id="send" onclick="cmdsend()"><img id="sendimg" alt="send" src="send.png"></button>
+        </div>
+    </div>
+    <script src="scripts/console.js"></script>
+</body>
+
+</html>

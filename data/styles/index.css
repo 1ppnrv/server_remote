@@ -1,0 +1,46 @@
+html, body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #47516a;
+}
+
+#password{
+    height: 30px;
+    border-radius: 10px;
+}
+
+#loginbtn{
+    font-size: 15px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#autoconnect{
+    width: 20px;
+    height: 20px;
+}
+
+label{
+    font-size: 16px;
+}
+
+#checkboxdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#error{
+    display: none;
+    color: red;
+}
+
