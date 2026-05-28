@@ -1,24 +1,0 @@
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ^C
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 
-
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ^C
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 
-
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ^C
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 
-
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ls
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ls
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ skill issue
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ pklk
-pklk: command not found
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ls
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ pklk
-pklk: command not found
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ls
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ pklk
-pklk: command not found
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 

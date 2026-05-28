@@ -102,7 +102,6 @@ async function openwsterm(terminal) {
         termmsg(terminal.id, e)
         terminal.status = 2
         updateclass(terminal.id, 2)
-
     });
     terminal.ws.addEventListener("message", (msg) => {
         //console.log(msg)

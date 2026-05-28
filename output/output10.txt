@@ -1,15 +1,0 @@
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ls
-ls
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ cd ..
-cd ..
-]0;alfre@Lenovo15IHU6: /home<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>/home</span></b>$ ls -a
-ls -a
-<b><span style='color:var(--blue,#00a)'>.</span></b>  <b><span style='color:var(--blue,#00a)'>..</span></b>  <b><span style='color:var(--blue,#00a)'>alfre</span></b>
-]0;alfre@Lenovo15IHU6: /home<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>/home</span></b>$ cd alfre
-cd alfre
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ls -a
-ls -a
-<b><span style='color:var(--blue,#00a)'>.</span></b>              .bash_logout  <b><span style='color:var(--blue,#00a)'>.cargo</span></b>      .motd_shown  .sudo_as_admin_successful
-<b><span style='color:var(--blue,#00a)'>..</span></b>             .bashrc       <b><span style='color:var(--blue,#00a)'>.landscape</span></b>  .profile     <b><span style='color:var(--blue,#00a)'>.vim</span></b>
-.bash_history  <b><span style='color:var(--blue,#00a)'>.cache</span></b>        .lesshst    <b><span style='color:var(--blue,#00a)'>.rustup</span></b>      .viminfo
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 

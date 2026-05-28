@@ -22,12 +22,12 @@ dependencies = [
 
 [[package]]
 name = "ansi-to-html"
-version = "0.2.2"
+version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "12e283a4fc285735ef99577e81a125f738429516161ac33977e466d0d8d40764"
+checksum = "1747e9bde0e06cdfa780fcba909df1fa220f82421ead1fd4a93427763d2cbda6"
 dependencies = [
+ "memchr",
  "regex",
- "thiserror",
 ]
 
 [[package]]
@@ -1100,9 +1100,9 @@ dependencies = [
 
 [[package]]
 name = "regex-syntax"
-version = "0.8.9"
+version = "0.8.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a96887878f22d7bad8a3b6dc5b7440e0ada9a245242924394987b21cf2210a4c"
+checksum = "dc897dd8d9e8bd1ed8cdad82b5966c3e0ecae09fb1907d58efaa013543185d0a"
 
 [[package]]
 name = "remote"

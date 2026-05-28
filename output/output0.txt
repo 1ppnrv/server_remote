@@ -1,49 +1,6 @@
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ls
-test
-test
-test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ sd
-sd
-Command &#39;sd&#39; not found, but can be installed with:
-sudo apt install sd
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ skill issue
-skill issue
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ skill issue
-skill issue
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ls
-ls
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ls
-ls
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-skill issue
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ pklk
-pklk: command not found
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ^C
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ^C
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 
-
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ Killterm
-Killterm: command not found
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ^C
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 
-
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ ]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ pingpingpingpingpingpingpingping99999]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 
+[?2004h]0;mrbap@Lenovo15IHU6: ~[01;32mmrbap@Lenovo15IHU6[00m:[01;34m~[00m$ [?2004h]0;mrbap@Lenovo15IHU6: ~[01;32mmrbap@Lenovo15IHU6[00m:[01;34m~[00m$ singe
+[?2004lbash: singe: command not found
+[?2004h]0;mrbap@Lenovo15IHU6: ~[01;32mmrbap@Lenovo15IHU6[00m:[01;34m~[00m$ test
+[?2004l[?2004h]0;mrbap@Lenovo15IHU6: ~[01;32mmrbap@Lenovo15IHU6[00m:[01;34m~[00m$ [?2004h]0;mrbap@Lenovo15IHU6: ~[01;32mmrbap@Lenovo15IHU6[00m:[01;34m~[00m$ [?2004h<b><span style='color:var(--green,#0a0)'>mrbap@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ singe
+[?2004lbash: singe: command not found
+[?2004h<b><span style='color:var(--green,#0a0)'>mrbap@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 

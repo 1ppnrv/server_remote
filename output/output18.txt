@@ -1,3 +1,0 @@
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ test
-test
-]0;alfre@Lenovo15IHU6: ~<b><span style='color:var(--green,#0a0)'>alfre@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 
