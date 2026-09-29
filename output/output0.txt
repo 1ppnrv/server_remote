@@ -1,6 +1,0 @@
-[?2004h]0;mrbap@Lenovo15IHU6: ~[01;32mmrbap@Lenovo15IHU6[00m:[01;34m~[00m$ [?2004h]0;mrbap@Lenovo15IHU6: ~[01;32mmrbap@Lenovo15IHU6[00m:[01;34m~[00m$ singe
-[?2004lbash: singe: command not found
-[?2004h]0;mrbap@Lenovo15IHU6: ~[01;32mmrbap@Lenovo15IHU6[00m:[01;34m~[00m$ test
-[?2004l[?2004h]0;mrbap@Lenovo15IHU6: ~[01;32mmrbap@Lenovo15IHU6[00m:[01;34m~[00m$ [?2004h]0;mrbap@Lenovo15IHU6: ~[01;32mmrbap@Lenovo15IHU6[00m:[01;34m~[00m$ [?2004h<b><span style='color:var(--green,#0a0)'>mrbap@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ singe
-[?2004lbash: singe: command not found
-[?2004h<b><span style='color:var(--green,#0a0)'>mrbap@Lenovo15IHU6</span></b>:<b><span style='color:var(--blue,#00a)'>~</span></b>$ 
