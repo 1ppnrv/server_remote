@@ -1,3 +1,6 @@
+document.getElementById("launchkill").addEventListener("click", newterm())
+document.getElementById("send").addEventListener("click", cmdsend())
+
 async function cmdsend() {
     if (terminals[curr_terminal].status == 1) {
         console.log("cmdsend")

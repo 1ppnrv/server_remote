@@ -5,6 +5,8 @@ document.getElementById("password").addEventListener("keydown", function (event)
     }
 });
 
+document.getElementById("loginbtn").addEventListener("click", login)
+
 async function autoconnect() {
     const cookiearray = document.cookie.split(';')
     for (let i = 0; i < cookiearray.length; i++) {
