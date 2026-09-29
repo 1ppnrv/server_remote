@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Files - MrBap's Server</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/files.css">
+</head>
+
+<body>
+    <script src="scripts/auth.js"></script>
+    <div id="menu">
+        <button class="menubtn" id="consoleBtn">Console</button>
+        <button class="menubtn" id="filesBtn">Files</button>
+    </div>
+    <div id="container">
+        <div id="btnsdiv">
+            <button id="uploadbtn" onclick="upload()"></button>
+        </div>
+        <div dir="explorer_container">
+        <div id="files"></div>
+        <div id="content"></div>
+    </div>
+    </div>
+
+    <script src="scripts/files.js"></script>
+</body>
