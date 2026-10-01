@@ -21,7 +21,7 @@ use axum::{
     routing::{get, post}
 };
 use std::{
-    fs::{self, File}, net::SocketAddr, path::Path as DirPath, sync::{Arc, OnceLock}, time
+    fs, net::SocketAddr, path::Path as DirPath, sync::{Arc, OnceLock}, time
 };
 use serde::{Deserialize, Serialize};
 use tokio::{
@@ -63,24 +63,9 @@ async fn main() {
 
     let addr = SocketAddr::from(([127, 0, 0, 1], 10001));
 
-    
-
-    // tokio::spawn(async move {
-    //     loop{
-    //         match log_receiver.recv().await {
-    //             Some(text) =>{
-    //                 let mut file = OpenOptions::new()
-    //                     .append(true)
-    //                     .create(true)
-    //                     .open("log.txt")
-    //                     .expect("failed to open log file");
-    //                 file.write_all(text.as_bytes())
-    //                     .expect("log function: failed to write in log.txt");
-    //             }
-    //             None => {}
-    //         }
-    //     }
-    // });
+    if !DirPath::new("output").exists(){
+        fs::create_dir("output").expect("failed to create output dir");
+    }
 
     pty::log("Server started".to_string());
 
@@ -88,6 +73,7 @@ async fn main() {
         .serve(app.into_make_service_with_connect_info::<SocketAddr>())
         .await
         .expect("Failed to bind server to addr");
+    
 
 }
 
@@ -104,7 +90,6 @@ async fn root() -> Response {
 }
 
 async fn get_handler(
-    State(termsdata): State<TermsData>,
     Path(arg): Path<String>,
 ) -> Response {
 
@@ -135,28 +120,16 @@ async fn get_handler(
 
         "hist" => {
             let mut hists = String::new();
-            {
-                let runnning_lock = termsdata.running.lock().await;
-                let nb_running = runnning_lock.len();
-                
-                for i in 0..nb_running{
-                    if runnning_lock[i] == 1{
-                        let output_path = format!("output/output{}.txt", i);
-                        if ! DirPath::new(output_path.as_str()).exists(){
-                            pty::log(format!("Creating output file for terminal {}", i));
-                            if !DirPath::new("output").exists(){
-                                fs::create_dir("output").expect("failed to create output dir");
-                            }
-                            let _ = File::create(output_path.as_str());
-                        }
-                        hists.push_str(format!(
-                            "{}{}endterm", i, fs::read_to_string(format!("output/output{}.txt", i)).expect("failed to read output"))
-                            .as_str()
-                        );
-                    } else {
-                        hists.push_str("OFFendterm");
-                    }
-                }
+            let output_files = fs::read_dir("./output/").expect("unable to read output dir");
+            let output_files_count = fs::read_dir("./output/").expect("unable to read output dir").count();
+
+            for (mut i, output) in output_files.enumerate() {
+                i = output_files_count - i;
+                println!("{} {}", i, output.as_ref().unwrap().path().display());
+                hists.push_str(format!(
+                    "{}{}endterm", i, fs::read_to_string(output.unwrap().path()).expect("failed to read output"))
+                    .as_str()
+                );
             }
             
             pty::log(format!("{} | /{} | {}\n", "GET", arg, "200"));

@@ -1,6 +1,15 @@
-document.getElementById("launchkill").addEventListener("click", newterm())
+document.getElementById("launchkill").addEventListener("click", newterm)
 
-document.getElementById("send").addEventListener("click", cmdsend())
+document.getElementById("send").addEventListener("click", cmdsend)
+
+document.getElementById("consolecontainer").addEventListener("keydown", function (event){
+    if (event.altKey && (event.key === 'c' || event.key === 'C')){
+        if (document.getElementById("cmdtextfield") == document.activeElement){
+            document.getElementById("cmdtextfield").value = "CtrlC"
+            cmdsend()
+        }
+    }
+})
 
 document.getElementById("cmdtextfield").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
@@ -61,6 +70,7 @@ async function openwsterm(terminal) {
         //console.log(msg)
         termmsg(terminal.id, msg.data)
     })
+    
     terminals[terminal.id] = terminal
 }
 
@@ -101,6 +111,7 @@ function updateclass(id, status) {
 async function newterm() {
     terminals.push(null)
     const terminal = {
+        name: "null",
         ws: null,
         id: nbterm,
         status: 0, // 0: Connecting, 1: Connected, 2: Err
@@ -119,7 +130,7 @@ function termmsg(id, msg) {
     if (id == curr_terminal) {
         let outputdiv = document.getElementById("output")
         outputdiv.innerHTML += msg
-        if (Math.round(outputdiv.scrollHeight-outputdiv.scrollTop) == outputdiv.offsetHeight){
+        if (Math.round(outputdiv.scrollHeight-outputdiv.scrollTop/1.1) == outputdiv.offsetHeight){
             outputdiv.scrollTop = outputdiv.scrollHeight
         }
     }
