@@ -1,3 +1,5 @@
 modify logs with ip
 
 check requests with cookies
+
+repair terminals

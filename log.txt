@@ -76,3 +76,137 @@
 [2026-10-01 10:41:27] GET | /send.png | 200
 [2026-10-01 10:41:27] GET | /favicon.ico | 404
 [2026-10-01 10:55:37] Server started
+[2026-10-01 16:52:26] Server started
+[2026-10-01 16:52:57] GET | /console | 200
+[2026-10-01 16:52:57] GET | /styles/console.css | 200
+[2026-10-01 16:52:57] GET | /scripts/auth.js | 200
+[2026-10-01 16:52:57] GET | /scripts/console.js | 200
+[2026-10-01 16:52:57] GET | /send.png | 200
+[2026-10-01 16:52:57] GET | /hist | 200
+[2026-10-01 16:52:57] GET | /favicon.ico | 404
+[2026-10-01 16:52:57] Terminal 0: Ready
+[2026-10-01 16:52:57] WS 0: Open
+[2026-10-01 16:53:23] WS 0: ping
+[2026-10-01 16:53:49] WS 0: ping
+[2026-10-01 16:54:15] WS 0: ping
+[2026-10-01 16:54:40] WS 0: ping
+[2026-10-01 16:55:11] WS 0: ping
+[2026-10-01 16:55:37] WS 0: ping
+[2026-10-01 16:55:45] Server started
+[2026-10-01 16:55:47] GET | /console | 200
+[2026-10-01 16:55:47] GET | /styles/console.css | 200
+[2026-10-01 16:55:47] GET | /scripts/auth.js | 200
+[2026-10-01 16:55:47] GET | /send.png | 200
+[2026-10-01 16:55:47] GET | /scripts/console.js | 200
+[2026-10-01 16:55:48] GET | /hist | 200
+[2026-10-01 16:55:48] Terminal 0: Ready
+[2026-10-01 16:55:48] WS 0: Open
+[2026-10-01 16:55:48] GET | /favicon.ico | 404
+[2026-10-01 16:56:13] WS 0: ping
+[2026-10-01 16:56:38] WS 0: ping
+[2026-10-01 16:57:08] WS 0: ping
+[2026-10-01 16:57:33] WS 0: ping
+[2026-10-01 16:57:58] WS 0: ping
+[2026-10-01 16:58:23] WS 0: ping
+[2026-10-01 16:58:49] WS 0: ping
+[2026-10-01 16:59:14] WS 0: ping
+[2026-10-01 16:59:25] WS 0: bad msg, ws closed
+[2026-10-01 16:59:25] WS 0: Closing
+[2026-10-01 16:59:25] GET | /console | 200
+[2026-10-01 16:59:25] GET | /styles/console.css | 200
+[2026-10-01 16:59:25] GET | /scripts/auth.js | 200
+[2026-10-01 16:59:25] GET | /scripts/console.js | 200
+[2026-10-01 16:59:25] GET | /send.png | 200
+[2026-10-01 16:59:25] Creating output file for terminal 0
+[2026-10-01 16:59:25] Creating output file for terminal 0
+[2026-10-01 16:59:25] Creating output file for terminal 0
+[2026-10-01 16:59:25] Creating output file for terminal 0
+[2026-10-01 16:59:25] Creating output file for terminal 0
+[2026-10-01 16:59:25] Creating output file for terminal 0
+[2026-10-01 16:59:25] Creating output file for terminal 0
+[2026-10-01 16:59:25] Creating output file for terminal 0
+[2026-10-01 16:59:26] Creating output file for terminal 0
+[2026-10-01 16:59:26] Creating output file for terminal 0
+[2026-10-01 16:59:26] GET | /favicon.ico | 404
+[2026-10-01 17:01:55] Server started
+[2026-10-01 17:01:58] GET | /console | 200
+[2026-10-01 17:01:58] GET | /styles/console.css | 200
+[2026-10-01 17:01:58] GET | /scripts/auth.js | 200
+[2026-10-01 17:01:58] GET | /scripts/console.js | 200
+[2026-10-01 17:01:58] GET | /send.png | 200
+[2026-10-01 17:01:58] GET | /hist | 200
+[2026-10-01 17:01:58] Terminal 0: Ready
+[2026-10-01 17:01:58] WS 0: Open
+[2026-10-01 17:01:58] Creating output file for terminal 0
+[2026-10-01 17:01:58] GET | /favicon.ico | 404
+[2026-10-01 17:02:02] WS 0: bad msg, ws closed
+[2026-10-01 17:02:02] WS 0: Closing
+[2026-10-01 17:02:02] GET | /console | 200
+[2026-10-01 17:02:02] GET | /scripts/auth.js | 200
+[2026-10-01 17:02:02] GET | /styles/console.css | 200
+[2026-10-01 17:02:02] GET | /scripts/console.js | 200
+[2026-10-01 17:02:02] GET | /send.png | 200
+[2026-10-01 17:02:02] Creating output file for terminal 0
+[2026-10-01 17:02:02] Creating output file for terminal 0
+[2026-10-01 17:02:02] Creating output file for terminal 0
+[2026-10-01 17:02:02] Creating output file for terminal 0
+[2026-10-01 17:02:02] Creating output file for terminal 0
+[2026-10-01 17:02:02] Creating output file for terminal 0
+[2026-10-01 17:02:02] Creating output file for terminal 0
+[2026-10-01 17:02:02] Creating output file for terminal 0
+[2026-10-01 17:02:02] Creating output file for terminal 0
+[2026-10-01 17:02:02] Creating output file for terminal 0
+[2026-10-01 17:02:02] GET | /favicon.ico | 404
+[2026-10-01 17:02:21] GET | /console | 200
+[2026-10-01 17:02:21] GET | /styles/console.css | 200
+[2026-10-01 17:02:21] GET | /scripts/console.js | 200
+[2026-10-01 17:02:21] GET | /scripts/auth.js | 200
+[2026-10-01 17:02:21] GET | /send.png | 200
+[2026-10-01 17:02:21] Creating output file for terminal 0
+[2026-10-01 17:02:21] Creating output file for terminal 0
+[2026-10-01 17:02:21] Creating output file for terminal 0
+[2026-10-01 17:02:21] Creating output file for terminal 0
+[2026-10-01 17:02:21] Creating output file for terminal 0
+[2026-10-01 17:02:21] Creating output file for terminal 0
+[2026-10-01 17:02:22] Creating output file for terminal 0
+[2026-10-01 17:02:22] Creating output file for terminal 0
+[2026-10-01 17:02:22] Creating output file for terminal 0
+[2026-10-01 17:02:22] Creating output file for terminal 0
+[2026-10-01 17:02:22] GET | /favicon.ico | 404
+[2026-10-01 17:02:24] Server started
+[2026-10-01 17:02:28] GET | /console | 200
+[2026-10-01 17:02:28] GET | /styles/console.css | 200
+[2026-10-01 17:02:28] GET | /scripts/console.js | 200
+[2026-10-01 17:02:28] GET | /scripts/auth.js | 200
+[2026-10-01 17:02:28] GET | /send.png | 200
+[2026-10-01 17:02:28] GET | /hist | 200
+[2026-10-01 17:02:28] GET | /favicon.ico | 404
+[2026-10-01 17:02:28] Terminal 0: Ready
+[2026-10-01 17:02:28] WS 0: Open
+[2026-10-01 17:02:28] Creating output file for terminal 0
+[2026-10-01 17:02:53] WS 0: ping
+[2026-10-01 17:03:19] WS 0: ping
+[2026-10-01 17:03:44] WS 0: ping
+[2026-10-01 17:04:10] WS 0: ping
+[2026-10-01 17:04:35] WS 0: ping
+[2026-10-01 17:05:00] WS 0: ping
+[2026-10-01 17:05:25] WS 0: ping
+[2026-10-01 17:05:51] WS 0: ping
+[2026-10-01 17:06:16] WS 0: ping
+[2026-10-01 17:06:41] WS 0: ping
+[2026-10-01 17:07:07] WS 0: ping
+[2026-10-01 17:07:27] Server started
+[2026-10-01 17:07:31] GET | /console | 200
+[2026-10-01 17:07:31] GET | /styles/console.css | 200
+[2026-10-01 17:07:31] GET | /scripts/auth.js | 200
+[2026-10-01 17:07:31] GET | /scripts/console.js | 200
+[2026-10-01 17:07:31] GET | /send.png | 200
+[2026-10-01 17:07:31] GET | /hist | 200
+[2026-10-01 17:07:31] GET | /favicon.ico | 404
+[2026-10-01 17:07:31] Terminal 0: Ready
+[2026-10-01 17:07:31] WS 0: Open
+[2026-10-01 17:07:31] Creating output file for terminal 0
+[2026-10-01 17:07:39] WS 0: sinj
+[2026-10-01 17:07:39] Terminal 0: sinj
+[2026-10-01 17:07:43] WS 0: singe
+[2026-10-01 17:07:43] Terminal 0: singe

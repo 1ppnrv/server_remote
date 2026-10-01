@@ -21,7 +21,7 @@ use axum::{
     routing::{get, post}
 };
 use std::{
-    format, fs::{self, File}, net::SocketAddr, path::Path as DirPath, sync::{Arc, OnceLock}, time
+    fs::{self, File}, net::SocketAddr, path::Path as DirPath, sync::{Arc, OnceLock}, time
 };
 use serde::{Deserialize, Serialize};
 use tokio::{
@@ -143,6 +143,10 @@ async fn get_handler(
                     if runnning_lock[i] == 1{
                         let output_path = format!("output/output{}.txt", i);
                         if ! DirPath::new(output_path.as_str()).exists(){
+                            pty::log(format!("Creating output file for terminal {}", i));
+                            if !DirPath::new("output").exists(){
+                                fs::create_dir("output").expect("failed to create output dir");
+                            }
                             let _ = File::create(output_path.as_str());
                         }
                         hists.push_str(format!(

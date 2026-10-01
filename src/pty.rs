@@ -1,5 +1,5 @@
 
-use std::{io::Read, io::Write, sync::Arc, fs::OpenOptions, thread, time};
+use std::{io::Read, io::Write, sync::Arc, fs::{self, File, OpenOptions}, path::Path as DirPath, thread, time};
 use portable_pty::{native_pty_system, CommandBuilder, PtySize};
 use tokio::sync::{mpsc::{Sender, Receiver}, Mutex};
 use async_std::task;
@@ -75,6 +75,16 @@ pub async fn new_pty(
                 term_output = ansi_to_html::convert(
                     String::from_utf8_lossy(&buf[..n]).as_ref())
                 .expect("Failed to parse terminal output");
+
+                let output_path = format!("output/output{}.txt", id);
+
+                if ! DirPath::new(output_path.as_str()).exists(){
+                    if !DirPath::new("output").exists(){
+                        fs::create_dir("output").expect("failed to create output dir");
+                    }
+                    log(format!("Creating output file for terminal {}", id));
+                    let _ = File::create(output_path.as_str());
+                }
 
                 let mut file = OpenOptions::new()
                     .append(true)
