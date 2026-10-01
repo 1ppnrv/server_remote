@@ -21,7 +21,7 @@ use axum::{
     routing::{get, post}
 };
 use std::{
-    fs, net::SocketAddr, sync::{Arc, OnceLock}, time
+    format, fs::{self, File}, net::SocketAddr, path::Path as DirPath, sync::{Arc, OnceLock}, time
 };
 use serde::{Deserialize, Serialize};
 use tokio::{
@@ -141,6 +141,10 @@ async fn get_handler(
                 
                 for i in 0..nb_running{
                     if runnning_lock[i] == 1{
+                        let output_path = format!("output/output{}.txt", i);
+                        if ! DirPath::new(output_path.as_str()).exists(){
+                            let _ = File::create(output_path.as_str());
+                        }
                         hists.push_str(format!(
                             "{}{}endterm", i, fs::read_to_string(format!("output/output{}.txt", i)).expect("failed to read output"))
                             .as_str()

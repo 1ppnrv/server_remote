@@ -1,5 +1,26 @@
 document.getElementById("launchkill").addEventListener("click", newterm())
+
 document.getElementById("send").addEventListener("click", cmdsend())
+
+document.getElementById("cmdtextfield").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault()
+        cmdsend()
+    }
+})
+
+document.getElementById("filesBtn").addEventListener("click", function (redirect) {
+    window.location.replace(`${windowhref}/files`)
+})
+
+var windowhref = `${window.location.href.split("/")[0]}//${window.location.href.split("/")[2]}`
+
+let terminals = []
+let curr_terminal = 0
+let nbterm = 0
+let auth = 0
+
+let hists = fetchterm()
 
 async function cmdsend() {
     if (terminals[curr_terminal].status == 1) {
@@ -143,20 +164,3 @@ async function fetchterm() {
     }
     return hists
 }
-
-let terminals = []
-let curr_terminal = 0
-let nbterm = 0
-let auth = 0
-
-let hists = fetchterm()
-document.getElementById("cmdtextfield").addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
-        event.preventDefault()
-        cmdsend()
-    }
-})
-
-document.getElementById("filesBtn").addEventListener("click", function (redirect) {
-    window.location.replace(`${windowhref}/files`)
-})
