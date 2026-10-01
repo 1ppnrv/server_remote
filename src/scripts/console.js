@@ -149,7 +149,6 @@ let curr_terminal = 0
 let nbterm = 0
 let auth = 0
 
-authenticate()
 let hists = fetchterm()
 document.getElementById("cmdtextfield").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {

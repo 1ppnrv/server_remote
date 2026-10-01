@@ -31,7 +31,7 @@ async function autoconnect() {
 
                 if (result.login_state == 1) {
                     console.log("cookie connection")
-                    window.location.replace(`${window.location.href}console`)
+                    window.location.replace(`${window.location.href}remote`)
                 }
 
             } catch (error) {
