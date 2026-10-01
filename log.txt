@@ -1,0 +1,22 @@
+[2026-10-01 10:18:15] Server started
+[2026-10-01 10:18:51] GET | / | 200
+[2026-10-01 10:18:51] GET | /styles/index.css | 200
+[2026-10-01 10:18:51] GET | /scripts/index.js | 200
+[2026-10-01 10:18:51] POST | /cookie | 200
+[2026-10-01 10:18:51] Cookie OK
+[2026-10-01 10:18:51] GET | /remote | 404
+[2026-10-01 10:18:51] GET | /favicon.ico | 404
+[2026-10-01 10:19:06] GET | /console | 200
+[2026-10-01 10:19:06] GET | /styles/console.css | 200
+[2026-10-01 10:19:06] GET | /scripts/auth.js | 200
+[2026-10-01 10:19:06] GET | /scripts/console.js | 200
+[2026-10-01 10:19:06] GET | /send.png | 200
+[2026-10-01 10:19:06] GET | /hist | 200
+[2026-10-01 10:19:06] GET | /favicon.ico | 404
+[2026-10-01 10:21:04] GET | /console | 200
+[2026-10-01 10:21:04] GET | /styles/console.css | 200
+[2026-10-01 10:21:04] GET | /scripts/console.js | 200
+[2026-10-01 10:21:04] GET | /scripts/auth.js | 200
+[2026-10-01 10:21:04] GET | /send.png | 200
+[2026-10-01 10:21:04] GET | /hist | 200
+[2026-10-01 10:21:04] GET | /favicon.ico | 404

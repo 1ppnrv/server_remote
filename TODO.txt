@@ -1,5 +1,3 @@
-cookie
+modify logs with ip
 
-rework login
-
-put cookie in each request
+check requests with cookies
