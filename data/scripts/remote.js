@@ -29,7 +29,9 @@ let curr_terminal = 0
 let nbterm = 0
 let auth = 0
 
-let hists = fetchterm()
+let outputhists = fetchhists()
+
+let cmdhists = fetchcmdhists()
 
 async function cmdsend() {
     if (terminals[curr_terminal].status == 1) {
@@ -150,8 +152,8 @@ function terminalselect(term) {
     document.getElementById("output").scrollTop = document.getElementById("output").scrollHeight
 }
 
-async function fetchterm() {
-    const response = await fetch("/hist");
+async function fetchhists() {
+    const response = await fetch("/outputhist");
     if (!response.ok) {
         console.error("bad history response")
         nbterm = 0
@@ -173,5 +175,16 @@ async function fetchterm() {
     } else {
         nbterms = hists.length
     }
+    return hists
+}
+
+async function fetchcmdhists() {
+    const response = await fetch("/cmdhists");
+    if (!response.ok) {
+        console.error("bad cmdhistory response")
+        return
+    }
+    let text = await response.text()
+    let hists = JSON.parse(text)
     return hists
 }

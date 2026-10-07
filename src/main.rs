@@ -1,10 +1,13 @@
 mod pty;
 
+use async_std::task;
 use axum::{
     Json,
     Router,
     body::Body,
     extract::{
+        ConnectInfo,
+        Request,
         Path,
         State,
         ws::{
@@ -18,16 +21,19 @@ use axum::{
         IntoResponse,
         Response
     },
-    routing::{get, post}
+    routing::{get, post},
+    middleware::{self, Next},
 };
 use std::{
-    fs, net::SocketAddr, path::Path as DirPath, sync::{Arc, OnceLock}, time
+    fs, net::SocketAddr, path::Path as DirPath, sync::Arc, time
 };
 use serde::{Deserialize, Serialize};
 use tokio::{
     sync::{mpsc::{self, Sender}, Mutex},
 };
 use futures_util::{SinkExt, StreamExt};
+
+use crate::pty::log;
 
 #[derive(Clone)]
 struct TermsData {
@@ -36,17 +42,12 @@ struct TermsData {
     outputs: Arc<Mutex<Vec<Sender<String>>>>,
 }
 
-static LOG_SENDER:OnceLock<Sender<String>> = OnceLock::new();
-
 #[tokio::main]
 async fn main() {
 
     let running: Arc<Mutex<Vec<u8>>> = Arc::new(Mutex::new(vec![]));
     let inputs: Arc<Mutex<Vec<Sender<String>>>> = Arc::new(Mutex::new(vec![]));
     let outputs: Arc<Mutex<Vec<Sender<String>>>> = Arc::new(Mutex::new(vec![]));
-
-    let (log_sender, mut _log_receiver) = mpsc::channel(32);
-    LOG_SENDER.set(log_sender).expect("unable to set log sender");
 
     let state = TermsData {
         running,
@@ -56,29 +57,62 @@ async fn main() {
 
     let app = Router::new()
         .route("/", get(root))
-        .route("/login/*arg", post(login_handler))
-        .route("/*arg", get(get_handler))
-        .route("/ws/:id", get(ws_handler))
+        .route("/{*arg}", get(get_handler))
+        .route("/ws/{id}", get(ws_handler))
+        .route("/login/{cookie}", post(login_handler))
+        .layer(middleware::from_fn(log_middleware))
         .with_state(state);
-
-    let addr = SocketAddr::from(([127, 0, 0, 1], 10001));
 
     if !DirPath::new("output").exists(){
         fs::create_dir("output").expect("failed to create output dir");
     }
 
-    pty::log("Server started".to_string());
+    if !DirPath::new("cmdhists").exists(){
+        fs::create_dir("cmdhists").expect("failed to create cmdhists dir");
+    }
 
-    axum::Server::bind(&addr)
-        .serve(app.into_make_service_with_connect_info::<SocketAddr>())
-        .await
-        .expect("Failed to bind server to addr");
+    log("Server started".to_string());
+
+    let listener = tokio::net::TcpListener::bind("127.0.0.1:10001").await.unwrap();
+    axum::serve(
+        listener,
+        app.into_make_service_with_connect_info::<SocketAddr>(),
+    ).await.unwrap();
     
 
 }
 
+async fn log_middleware(
+    request: Request,
+    next: Next,
+) -> Response {
+    let method = request.method().to_string();
+    let method_clone = method.clone();
+    let uri = request.uri().to_string();
+    let uri_clone = uri.clone();
+    let ip;
+    
+    if let Some(ConnectInfo(addr)) = request.extensions().get::<ConnectInfo<SocketAddr>>() {
+        ip = addr.ip();
+    }else{
+        ip = "255.255.255.255".parse().expect("valid IP address");
+    }
+
+    task::spawn(async move {
+        log(format!("{} | {} {} | incoming\n", ip, method, uri));
+    });
+
+    let response = next.run(request).await;
+
+    let status = response.status();
+    task::spawn(async move {
+        log(format!("{} | {} {} | {}\n", ip, method_clone, uri_clone, status));
+    });
+
+    response
+}
+
 async fn root() -> Response {
-    pty::log(format!("{} | {} | {}\n", "GET", "/", "200"));
     Response::builder()
         .status(200)
         .header("Content-Type", "text/html")
@@ -94,19 +128,17 @@ async fn get_handler(
 ) -> Response {
 
     match arg.as_str() {
-        "console" => {
-            pty::log(format!("{} | /{} | {}\n", "GET", arg, "200"));
+        "remote" => {
             Response::builder()
                 .status(200)
                 .header("Content-Type", "text/html")
                 .body(Body::from(
-                    fs::read_to_string("data/console.html").expect("skill issue: pas de fichier console"),
+                    fs::read_to_string("data/remote.html").expect("skill issue: pas de fichier remote.html"),
                 ))
                 .expect("Failed to build response")
                 .into_response()
         }
         "files" => {
-            pty::log(format!("{} | /{} | {}\n", "GET", arg, "200"));
             Response::builder()
                 .status(200)
                 .header("Content-Type", "text/html")
@@ -118,21 +150,18 @@ async fn get_handler(
         }
         
 
-        "hist" => {
+        "outputhist" => {
             let mut hists = String::new();
             let output_files = fs::read_dir("./output/").expect("unable to read output dir");
             let output_files_count = fs::read_dir("./output/").expect("unable to read output dir").count();
 
             for (mut i, output) in output_files.enumerate() {
                 i = output_files_count - i;
-                println!("{} {}", i, output.as_ref().unwrap().path().display());
                 hists.push_str(format!(
                     "{}{}endterm", i, fs::read_to_string(output.unwrap().path()).expect("failed to read output"))
                     .as_str()
                 );
             }
-            
-            pty::log(format!("{} | /{} | {}\n", "GET", arg, "200"));
             Response::builder()
                 .status(200)
                 .header("Content-Type", "text/html")
@@ -141,8 +170,34 @@ async fn get_handler(
                 .into_response()
         }
 
+        "cmdhists" =>{
+            let mut cmdhists = "{".to_string();
+            let cmdhist_files = fs::read_dir("./cmdhists/").expect("unable to read cmdhist dir");
+            let cmdhist_files_count = fs::read_dir("./cmdhists/").expect("unable to read cmdhist dir").count();
+
+            for (mut i, cmdhist) in cmdhist_files.enumerate() {
+                i = cmdhist_files_count - i;
+                cmdhists.push_str(format!(
+                    "\"{}\": \"{}\",", i, fs::read_to_string(cmdhist.unwrap().path()).expect("failed to read output"))
+                    .as_str()
+                );
+            }
+
+            cmdhists.push_str("}");
+            cmdhists = str::replace(cmdhists.as_str(), ",}", "}");
+            
+            
+            Response::builder()
+                .status(200)
+                .header("Content-Type", "text/html")
+                .body(Body::from(cmdhists))
+                .expect("Failed to build response")
+                .into_response()
+        }
+
         _ => {
             let path = format!("data/{}", arg);
+            // log(path.clone());
             match fs::read(&path) {
                 Ok(bytes) => {
                     let content_type = if path.ends_with(".js") {
@@ -161,7 +216,6 @@ async fn get_handler(
                         "application/octet-stream"
                     };
 
-                    pty::log(format!("{} | /{} | {}\n", "GET", arg, "200"));
                     Response::builder()
                         .status(200)
                         .header("Content-Type", content_type)
@@ -170,7 +224,7 @@ async fn get_handler(
                         .into_response()
                 }
                 Err(_) => {
-                    pty::log(format!("{} | /{} | {}\n", "GET", arg, "404"));
+                    log(format!("{} | /{} | {}\n", "GET", arg, "404"));
                     Response::builder()
                         .status(StatusCode::NOT_FOUND)
                         .header("Content-Type", "text/plain")
@@ -200,15 +254,15 @@ async fn login_handler(
 ) -> impl IntoResponse {
     match arg.as_str() {
         "pwd" => {
-            pty::log(format!("{} | /{} | {}\n", "POST", arg, "200"));
+            log(format!("{} | /{} | {}\n", "POST", arg, "200"));
             if data.password == "pklk" {
-                pty::log("Password OK".to_string());
+                log("Password OK".to_string());
                 Json(LoginResponse {
                     login_state: 1,
                     cookie_value: "poklokpondpart".to_string(),
                 })
             } else {
-                pty::log("Wrong password".to_string());
+                log("Wrong password".to_string());
                 Json(LoginResponse {
                     login_state: 0,
                     cookie_value: "".to_string(),
@@ -216,15 +270,15 @@ async fn login_handler(
             }
         }
         "cookie" => {
-            pty::log(format!("{} | /{} | {}\n", "POST", arg, "200"));
+            log(format!("{} | /{} | {}\n", "POST", arg, "200"));
             if data.password == "poklokpondpart" {
-                pty::log("Cookie OK".to_string());
+                log("Cookie OK".to_string());
                 Json(LoginResponse {
                     login_state: 1,
                     cookie_value: "".to_string(),
                 })
             } else {
-                pty::log("Wrong cookie".to_string());
+                log("Wrong cookie".to_string());
                 Json(LoginResponse {
                     login_state: 0,
                     cookie_value: "".to_string(),
@@ -233,7 +287,7 @@ async fn login_handler(
         }
 
         _ => {
-            pty::log(format!("{} | /{} | {}\n", "POST", arg, "404"));
+            log(format!("{} | /{} | {}\n", "POST", arg, "404"));
             Json(LoginResponse {
                 login_state: 0,
                 cookie_value: "".to_string(),
@@ -306,20 +360,20 @@ async fn pty_socket(
             match msg {
                 Some(text) => {
                     if text == "WS_Stop".to_string(){
-                        pty::log(format!("WS {}: Closing", id));
+                        log(format!("WS {}: Closing", id));
                         break
                     }
-                    match writer.send(Message::Text(text)).await {
-                        Ok(_) => {},
+                    match writer.send(Message::Text(text.into())).await {
+                        Ok(_) => {}
                         Err(e) => {
-                            pty::log(format!("WS {}: Err sending output: {}", id, e));
+                            log(format!("WS {}: Err sending output: {}", id, e));
                             break
                         },
                     }
                 }
                 None => {
-                    pty::log(format!("WS {}: Terminal {} reception channel closed", id, id));
-                    writer.send(Message::Text("Terminal reception error".to_string()))
+                    log(format!("WS {}: Terminal {} reception channel closed", id, id));
+                    writer.send(Message::Text("Terminal reception error".into()))
                         .await.expect(format!("WS {}: unable to send error", id).as_str());
                     break
                 }
@@ -328,18 +382,18 @@ async fn pty_socket(
         }
     });
 
-    pty::log(format!("WS {}: Open", id));
+    log(format!("WS {}: Open", id));
 
     // commands receiving from ws and sending in pty input
     loop {
         match receiver.next().await {
             Some(Ok(Message::Text(text))) => {
-                pty::log(format!("WS {}: {}", id, text.clone()));
+                log(format!("WS {}: {}", id, text.clone()));
                 if text != "ping".to_string(){
-                    match sender_pty.send(text).await {
+                    match sender_pty.send(text.to_string()).await {
                         Ok(_) => {}
                         Err(e) => {
-                            pty::log(format!("WS {}: Terminal {}: unable to send command: {}", id, id, e))
+                            log(format!("WS {}: Terminal {}: unable to send command: {}", id, id, e))
                         }
                     }
                 }
@@ -348,10 +402,10 @@ async fn pty_socket(
             Some(Ok(Message::Ping(_))) => {}
 
             _ => {
-                pty::log(format!("WS {}: bad msg, ws closed", id));
+                log(format!("WS {}: bad msg, ws closed", id));
                 stop_channel.send("WS_Stop".to_string()).await.ok();
                 break
-                // pty::log(format!("WS {}: msg is not a text , trying to write it in errors.txt", id));
+                // log(format!("WS {}: msg is not a text , trying to write it in errors.txt", id));
                 // let mut file = OpenOptions::new()
                 //     .append(true)
                 //     .create(true)

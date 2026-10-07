@@ -1,5 +1,5 @@
 
-use std::{io::Read, io::Write, sync::Arc, fs::{self, File, OpenOptions}, path::Path as DirPath, thread, time};
+use std::{io::Read, io::Write, sync::Arc, fs::{self, File, OpenOptions}, path::Path as DirPath, env::consts, thread, time};
 use portable_pty::{native_pty_system, CommandBuilder, PtySize};
 use tokio::sync::{mpsc::{Sender, Receiver}, Mutex};
 use async_std::task;
@@ -41,10 +41,17 @@ pub async fn new_pty(
         })
         .expect(format!("unable to spawn pair for terminal{}", id).as_str());
 
-    let mut child = pair
-        .slave
-        .spawn_command(CommandBuilder::new("bash"))
-        .expect(format!("unable to spawn child for terminal{}", id).as_str());
+    let mut child = if consts::OS == "windows"{
+            pair
+            .slave
+            .spawn_command(CommandBuilder::new("powershell"))
+            .expect(format!("unable to spawn child for terminal{}", id).as_str())
+        }else{
+            pair
+            .slave
+            .spawn_command(CommandBuilder::new("bash"))
+            .expect(format!("unable to spawn child for terminal{}", id).as_str())
+        };
 
     let mut writer = pair.master.take_writer().expect(format!("unable to take writer for terminal{}", id).as_str());
     let mut reader = pair.master.try_clone_reader().expect(format!("unable to clone reader for terminal{}", id).as_str());
@@ -117,6 +124,24 @@ pub async fn new_pty(
                 Some(cmd) => cmd,
                 None => break,
             };
+
+            let cmdhist_path = format!("cmdhists/cmdhist{}.txt", id);
+
+            if ! DirPath::new(cmdhist_path.as_str()).exists(){
+                if !DirPath::new("cmdhist").exists(){
+                    fs::create_dir("cmdhist").expect("failed to create cmdhist dir");
+                }
+                log(format!("Creating cmdhist file for terminal {}", id));
+                let _ = File::create(cmdhist_path.as_str());
+            }
+
+            let mut file = OpenOptions::new()
+                .append(true)
+                .create(true)
+                .open(format!("cmdhist/cmdhist{}.txt", id))
+                .expect(format!("failed to open cmdhist{} file", id).as_str());
+            file.write_all(command.as_bytes()).expect(format!("unable to write cmdhist of terminal {} in cmdhist file", id).as_str());
+
             match command.as_str(){
                 "" => {}
                 "KillTerm\n" => {
