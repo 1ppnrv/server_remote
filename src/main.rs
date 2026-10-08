@@ -84,7 +84,24 @@ async fn log_middleware(request: Request, next: Next) -> Response {
         log(format!("{} | {} {} | incoming\n", ip, method, uri));
     });
 
-    let response = next.run(request).await;
+    let path = request.uri().path();
+    let requires_cookie = matches!(path, "/remote" | "/files" | "/outputhist")
+        || path.starts_with("/ws/");
+    let has_valid_cookie = request
+        .headers()
+        .get(axum::http::header::COOKIE)
+        .and_then(|value| value.to_str().ok())
+        .is_some_and(|cookies| {
+            cookies
+                .split(';')
+                .any(|cookie| cookie.trim() == "mrbap_remote=poklokpondpart" || cookie.trim() == "auth=poklokpondpart")
+        });
+
+    let response = if requires_cookie && !has_valid_cookie {
+        root().await
+    } else {
+        next.run(request).await
+    };
 
     let status = response.status();
     task::spawn(async move {
@@ -227,13 +244,13 @@ async fn login_handler(Path(arg): Path<String>, Json(data): Json<Login>) -> impl
         "cookie" => {
             log(format!("{} | /{} | {}\n", "POST", arg, "200"));
             if data.password == "poklokpondpart" {
-                log("Cookie OK".to_string());
+                log("Password OK".to_string());
                 Json(LoginResponse {
                     login_state: 1,
                     cookie_value: "".to_string(),
                 })
             } else {
-                log("Wrong cookie".to_string());
+                log("Wrong password".to_string());
                 Json(LoginResponse {
                     login_state: 0,
                     cookie_value: "".to_string(),

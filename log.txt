@@ -5948,3 +5948,474 @@
 [2026-10-08 16:45:29] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
 [2026-10-08 16:45:29] WS 2: Open
 [2026-10-08 16:45:32] Terminal 2: sd
+[2026-10-08 16:54:10] Server started
+[2026-10-08 16:54:18] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js.map | incoming
+[2026-10-08 16:54:18] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js.map | 200 OK
+[2026-10-08 16:54:31] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 16:54:31] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 16:54:31] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 16:54:31] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 16:54:31] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 16:54:31] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 16:54:31] POST | /cookie | 200
+[2026-10-08 16:54:31] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 16:54:31] Wrong cookie
+[2026-10-08 16:54:31] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 16:54:31] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:54:31] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:54:34] POST | /pwd | 200
+[2026-10-08 16:54:34] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 16:54:34] Password OK
+[2026-10-08 16:54:34] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 16:54:34] 127.0.0.1 | GET /remoteconsole | incoming
+[2026-10-08 16:54:34] 127.0.0.1 | GET /remoteconsole | 404 Not Found
+[2026-10-08 16:54:34] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:54:34] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:56:14] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:56:14] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:56:21] 127.0.0.1 | GET / | 200 OK
+[2026-10-08 16:56:21] 127.0.0.1 | GET / | incoming
+[2026-10-08 16:56:21] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 16:56:21] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 16:56:21] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 16:56:21] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 16:56:21] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 16:56:21] POST | /cookie | 200
+[2026-10-08 16:56:21] Wrong cookie
+[2026-10-08 16:56:21] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 16:56:21] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:56:21] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:56:27] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 16:56:27] POST | /pwd | 200
+[2026-10-08 16:56:27] Password OK
+[2026-10-08 16:56:27] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 16:56:27] 127.0.0.1 | GET /console | incoming
+[2026-10-08 16:56:27] 127.0.0.1 | GET /console | 404 Not Found
+[2026-10-08 16:56:27] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:56:27] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:56:46] 127.0.0.1 | GET /console | incoming
+[2026-10-08 16:56:46] 127.0.0.1 | GET /console | 404 Not Found
+[2026-10-08 16:56:46] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:56:46] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:56:48] 127.0.0.1 | GET /console | incoming
+[2026-10-08 16:56:48] 127.0.0.1 | GET /console | 404 Not Found
+[2026-10-08 16:56:48] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:56:48] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:57:00] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:57:00] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:57:03] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:57:03] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:57:07] 127.0.0.1 | GET / | incoming
+[2026-10-08 16:57:07] 127.0.0.1 | GET / | 200 OK
+[2026-10-08 16:57:07] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 16:57:07] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 16:57:07] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 16:57:07] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 16:57:07] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 16:57:07] POST | /cookie | 200
+[2026-10-08 16:57:07] Wrong cookie
+[2026-10-08 16:57:07] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 16:57:07] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:57:07] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:57:10] POST | /pwd | 200
+[2026-10-08 16:57:10] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 16:57:10] Password OK
+[2026-10-08 16:57:10] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 16:57:10] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 16:57:10] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 16:57:10] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 16:57:10] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 16:57:10] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 16:57:10] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 16:57:10] POST | /cookie | 200
+[2026-10-08 16:57:10] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 16:57:10] Wrong cookie
+[2026-10-08 16:57:10] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 16:57:10] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:57:10] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:57:54] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 16:57:54] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 16:57:54] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 16:57:54] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 16:57:54] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 16:57:54] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 16:57:54] POST | /cookie | 200
+[2026-10-08 16:57:54] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 16:57:54] Wrong cookie
+[2026-10-08 16:57:54] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 16:57:54] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:57:54] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:57:56] POST | /pwd | 200
+[2026-10-08 16:57:56] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 16:57:56] Password OK
+[2026-10-08 16:57:56] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 16:57:56] 127.0.0.1 | GET /remoteremote | incoming
+[2026-10-08 16:57:56] 127.0.0.1 | GET /remoteremote | 404 Not Found
+[2026-10-08 16:57:56] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:57:56] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:58:00] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:58:00] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:58:03] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:58:03] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:58:07] 127.0.0.1 | GET / | incoming
+[2026-10-08 16:58:07] 127.0.0.1 | GET / | 200 OK
+[2026-10-08 16:58:07] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 16:58:07] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 16:58:07] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 16:58:07] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 16:58:07] POST | /cookie | 200
+[2026-10-08 16:58:07] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 16:58:07] Wrong cookie
+[2026-10-08 16:58:07] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 16:58:07] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 16:58:07] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:58:08] POST | /pwd | 200
+[2026-10-08 16:58:08] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 16:58:08] Password OK
+[2026-10-08 16:58:08] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 16:58:08] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 16:58:08] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 16:58:08] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 16:58:08] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 16:58:08] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 16:58:08] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 16:58:08] POST | /cookie | 200
+[2026-10-08 16:58:08] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 16:58:08] Wrong cookie
+[2026-10-08 16:58:08] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 16:58:08] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 16:58:08] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:00:25] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:00:25] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:00:25] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:00:25] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:00:25] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:00:25] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:00:26] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:00:26] POST | /cookie | 200
+[2026-10-08 17:00:26] Wrong cookie
+[2026-10-08 17:00:26] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:00:26] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:00:26] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:00:27] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:00:27] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:00:27] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:00:27] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:00:30] 127.0.0.1 | GET / | incoming
+[2026-10-08 17:00:30] 127.0.0.1 | GET / | 200 OK
+[2026-10-08 17:00:30] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:00:30] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:00:30] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:00:30] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:00:30] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:00:30] POST | /cookie | 200
+[2026-10-08 17:00:30] Wrong cookie
+[2026-10-08 17:00:30] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:00:30] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:00:30] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:01:29] 127.0.0.1 | GET / | incoming
+[2026-10-08 17:01:29] 127.0.0.1 | GET / | 200 OK
+[2026-10-08 17:01:29] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:01:29] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:01:29] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:01:29] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:01:29] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:01:29] POST | /cookie | 200
+[2026-10-08 17:01:29] Wrong cookie
+[2026-10-08 17:01:29] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:01:29] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:01:29] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:01:31] POST | /pwd | 200
+[2026-10-08 17:01:31] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:01:31] Password OK
+[2026-10-08 17:01:31] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:01:31] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:01:31] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:01:31] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:01:31] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:01:31] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:01:31] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:01:31] POST | /cookie | 200
+[2026-10-08 17:01:31] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:01:31] Wrong cookie
+[2026-10-08 17:01:31] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:01:31] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:01:31] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:01:34] POST | /pwd | 200
+[2026-10-08 17:01:34] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:01:34] Password OK
+[2026-10-08 17:01:34] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:01:34] 127.0.0.1 | GET /remoteremote | incoming
+[2026-10-08 17:01:34] 127.0.0.1 | GET /remoteremote | 404 Not Found
+[2026-10-08 17:01:35] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:01:35] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:01:58] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:01:58] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:01:59] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:01:59] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:02:01] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:02:01] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:02:28] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:02:28] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:02:28] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:02:28] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:02:28] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:02:28] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:02:28] POST | /cookie | 200
+[2026-10-08 17:02:28] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:02:28] Wrong cookie
+[2026-10-08 17:02:28] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:02:28] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:02:28] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:02:31] POST | /pwd | 200
+[2026-10-08 17:02:31] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:02:31] Password OK
+[2026-10-08 17:02:31] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:02:31] 127.0.0.1 | GET /remoteremote | incoming
+[2026-10-08 17:02:31] 127.0.0.1 | GET /remoteremote | 404 Not Found
+[2026-10-08 17:02:31] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:02:31] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:02:33] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:02:33] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:02:34] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:02:34] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:02:39] 127.0.0.1 | GET / | incoming
+[2026-10-08 17:02:39] 127.0.0.1 | GET / | 200 OK
+[2026-10-08 17:02:39] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:02:39] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:02:39] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:02:39] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:02:39] POST | /cookie | 200
+[2026-10-08 17:02:39] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:02:39] Wrong cookie
+[2026-10-08 17:02:39] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:03:10] 127.0.0.1 | GET / | incoming
+[2026-10-08 17:03:10] 127.0.0.1 | GET / | 200 OK
+[2026-10-08 17:03:10] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:03:10] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:03:10] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:03:10] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:03:10] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:03:10] POST | /cookie | 200
+[2026-10-08 17:03:10] Wrong cookie
+[2026-10-08 17:03:10] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:03:12] POST | /pwd | 200
+[2026-10-08 17:03:12] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:03:12] Password OK
+[2026-10-08 17:03:12] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:03:12] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:03:12] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:03:12] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:03:12] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:03:12] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:03:12] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:03:12] POST | /cookie | 200
+[2026-10-08 17:03:12] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:03:12] Wrong cookie
+[2026-10-08 17:03:12] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:03:22] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:03:22] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:03:22] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:03:22] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:03:22] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:03:22] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:03:22] POST | /cookie | 200
+[2026-10-08 17:03:22] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:03:22] Wrong cookie
+[2026-10-08 17:03:22] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:03:22] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:03:22] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:03:35] Server started
+[2026-10-08 17:03:37] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:03:37] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:03:37] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:03:37] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:03:37] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:03:37] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:03:37] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:03:37] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:03:37] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:03:37] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:03:37] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:03:37] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:03:37] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:03:37] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:03:37] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:03:37] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:03:37] Terminal 0: Ready
+[2026-10-08 17:03:37] WS 0: Open
+[2026-10-08 17:03:37] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:03:37] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:03:37] Terminal 1: Ready
+[2026-10-08 17:03:37] WS 1: Open
+[2026-10-08 17:03:37] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:03:37] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:03:37] Terminal 2: Ready
+[2026-10-08 17:03:37] WS 2: Open
+[2026-10-08 17:03:51] WS 2: bad msg, ws closed
+[2026-10-08 17:03:51] WS 1: bad msg, ws closed
+[2026-10-08 17:03:51] WS 0: bad msg, ws closed
+[2026-10-08 17:03:51] WS 2: Closing
+[2026-10-08 17:03:51] WS 1: Closing
+[2026-10-08 17:03:51] WS 0: Closing
+[2026-10-08 17:03:51] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:03:51] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:03:51] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:03:51] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:03:51] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:03:51] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:03:51] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:03:51] POST | /cookie | 200
+[2026-10-08 17:03:51] Wrong cookie
+[2026-10-08 17:03:51] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:03:51] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:03:51] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:03:58] POST | /pwd | 200
+[2026-10-08 17:03:58] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:03:58] Wrong password
+[2026-10-08 17:03:58] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:04:05] POST | /pwd | 200
+[2026-10-08 17:04:05] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:04:05] Password OK
+[2026-10-08 17:04:05] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:04:05] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:04:05] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:04:05] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:04:05] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:04:05] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:04:05] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:04:05] POST | /cookie | 200
+[2026-10-08 17:04:05] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:04:05] Wrong cookie
+[2026-10-08 17:04:05] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:04:05] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:04:05] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:04:20] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:04:20] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:04:20] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:04:20] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:04:20] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:04:20] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:04:20] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-08 17:04:20] POST | /cookie | 200
+[2026-10-08 17:04:20] Wrong cookie
+[2026-10-08 17:04:20] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-08 17:04:20] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:04:20] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:05:20] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:05:20] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:05:20] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:05:20] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:05:20] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:05:20] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:05:20] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:05:20] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:07:33] Server started
+[2026-10-08 17:07:36] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:07:36] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:07:36] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:07:36] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:07:36] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:07:36] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:07:36] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:07:36] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:07:38] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:07:38] POST | /pwd | 200
+[2026-10-08 17:07:38] Password OK
+[2026-10-08 17:07:38] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:07:38] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:07:38] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:07:38] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:07:38] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:07:38] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:07:38] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:07:38] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:07:38] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:07:38] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:07:38] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:07:38] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:07:38] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:07:38] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:07:38] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:07:38] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:07:38] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:07:38] Terminal 0: Ready
+[2026-10-08 17:07:38] WS 0: Open
+[2026-10-08 17:07:38] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:07:38] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:07:38] Terminal 1: Ready
+[2026-10-08 17:07:38] WS 1: Open
+[2026-10-08 17:07:38] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:07:38] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:07:38] Terminal 2: Ready
+[2026-10-08 17:07:38] WS 2: Open
+[2026-10-08 17:15:16] Server started
+[2026-10-08 17:15:16] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:15:16] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:15:17] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:15:17] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:15:17] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:15:17] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:15:17] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:15:17] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:15:19] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:15:19] POST | /pwd | 200
+[2026-10-08 17:15:19] Password OK
+[2026-10-08 17:15:19] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:15:19] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:15:19] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:15:20] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:15:20] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:15:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:15:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:15:20] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:15:20] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:15:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:15:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:15:20] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:15:20] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:15:20] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:15:20] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:15:20] Terminal 0: Ready
+[2026-10-08 17:15:20] WS 0: Open
+[2026-10-08 17:15:20] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:15:20] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:15:20] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:15:20] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:15:20] Terminal 1: Ready
+[2026-10-08 17:15:20] WS 1: Open
+[2026-10-08 17:15:20] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:15:20] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:15:20] Terminal 2: Ready
+[2026-10-08 17:15:20] WS 2: Open
+[2026-10-08 17:16:14] WS 0: bad msg, ws closed
+[2026-10-08 17:16:14] WS 1: bad msg, ws closed
+[2026-10-08 17:16:14] WS 2: bad msg, ws closed
+[2026-10-08 17:16:14] WS 0: Closing
+[2026-10-08 17:16:14] WS 2: Closing
+[2026-10-08 17:16:14] WS 1: Closing
+[2026-10-08 17:16:14] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:16:14] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:16:15] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:16:15] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:16:15] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:16:15] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:16:15] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:16:15] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:16:15] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:16:15] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:16:15] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:16:15] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:16:15] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-08 17:16:15] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-08 17:16:15] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:16:15] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:16:15] WS 0: Open
+[2026-10-08 17:16:15] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:16:15] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:16:15] WS 1: Open
+[2026-10-08 17:16:15] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:16:15] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:16:15] WS 2: Open
+[2026-10-08 17:16:33] Terminal 2: curl
+[2026-10-08 17:16:39] Terminal 2: curl epitr.fr

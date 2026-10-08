@@ -7,13 +7,15 @@ document.getElementById("password").addEventListener("keydown", function (event)
 
 document.getElementById("loginbtn").addEventListener("click", login)
 
+var windowhref = `${window.location.href.split("/")[0]}//${window.location.href.split("/")[2]}`
+
 async function autoconnect() {
     const cookiearray = document.cookie.split(';')
     for (let i = 0; i < cookiearray.length; i++) {
         let cookie = cookiearray[i]
         cookie = cookie.trim()
 
-        if (cookie.indexOf("remote_mrbap=") === 0) {
+        if (cookie.indexOf("mrbap_remote=") === 0) {
             try {
                 const response = await fetch("/login/cookie", {
                     method: "POST",
@@ -31,7 +33,8 @@ async function autoconnect() {
 
                 if (result.login_state == 1) {
                     console.log("cookie connection")
-                    window.location.replace(`${window.location.href}remote`)
+					console.log(windowhref)
+                    window.location.replace(`${windowhref}/remote`)
                 }
 
             } catch (error) {
@@ -69,13 +72,13 @@ async function login() {
                 let date = new Date;
                 if (document.getElementById("autoconnect").checked) {
                     date.setFullYear(date.getFullYear() + 100);
-                    document.cookie = `${encodeURIComponent("remote_mrbap")}=${encodeURIComponent(result.cookie_value)}; expires=${date.toUTCString()}; path=/; Secure; SameSite=Strict`;
+                    document.cookie = `${encodeURIComponent("mrbap_remote")}=${encodeURIComponent(result.cookie_value)}; expires=${date.toUTCString()}; path=/; Secure; SameSite=Strict`;
                     date = new Date;
                 }else{
                 date.setTime(date.getTime() + 86400);
                 document.cookie = `${encodeURIComponent("auth")}=${encodeURIComponent(result.cookie_value)}; expires=${date.toUTCString()}; path=/; Secure; SameSite=Strict`;
                 }
-                window.location.replace(`${window.location.href}console`)
+                window.location.replace(`${windowhref}/remote`)
 
             } else {
                 document.getElementById("password").value = ""

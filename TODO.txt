@@ -1,5 +1,1 @@
-modify logs with ip
-
-check requests with cookies
-
-fix le killterm qui ferme pas le ws
+killterm => kill tout/ferme tout
