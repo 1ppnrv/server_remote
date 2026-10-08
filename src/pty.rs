@@ -36,6 +36,28 @@ pub async fn new_pty(
     mut output: Sender<String>,
     outputs_list: Arc<Mutex<Vec<Sender<String>>>>,
 ) {
+	{
+		let output_path = format!("output/output{}.txt", id);
+
+		if !DirPath::new(output_path.as_str()).exists() {
+			if !DirPath::new("output").exists() {
+				fs::create_dir("output").expect("failed to create output dir");
+			}
+			log(format!("Creating output file for terminal {}", id));
+			let _ = File::create(output_path.as_str());
+		}
+
+		let output_path = format!("titles/title{}.txt", id);
+
+		if !DirPath::new(output_path.as_str()).exists() {
+			if !DirPath::new("titles").exists() {
+				fs::create_dir("titles").expect("failed to create output dir");
+			}
+			log(format!("Creating title file for terminal {}", id));
+			let _ = File::create(output_path.as_str());
+		}
+	}
+
     let pty_system = native_pty_system();
 
     let pair = pty_system
@@ -67,6 +89,8 @@ pub async fn new_pty(
         .expect(format!("unable to clone reader for terminal{}", id).as_str());
 
     let running_clone: Arc<Mutex<Vec<u8>>> = running.clone();
+	let mut output_clone = output.clone();
+	let output_list_clone = outputs_list.clone();
 
     //output reading and sending in queue
     tokio::task::spawn_blocking(move || {
@@ -96,16 +120,6 @@ pub async fn new_pty(
 				let term_output_clone = term_output.clone();
 
                 task::spawn(async move {
-                    let output_path = format!("output/output{}.txt", id);
-
-                    if !DirPath::new(output_path.as_str()).exists() {
-                        if !DirPath::new("output").exists() {
-                            fs::create_dir("output").expect("failed to create output dir");
-                        }
-                        log(format!("Creating output file for terminal {}", id));
-                        let _ = File::create(output_path.as_str());
-                    }
-
                     let mut file = OpenOptions::new()
                         .append(true)
                         .create(true)
@@ -123,7 +137,6 @@ pub async fn new_pty(
 
                 Err(_) => {
                     thread::sleep(time::Duration::from_millis(500));
-                    log(format!("Terminal {}: trying to retrieve output sender", id));
                     task::block_on(async {
                         let new_output = outputs_list.lock().await;
                         output = new_output[id].clone();
@@ -145,14 +158,42 @@ pub async fn new_pty(
                 None => break,
             };
 
-			command_full_clone.push_str(command.as_str());
+			match output_clone.send("termtitle".to_string()).await {
+				Ok(_) => {},
 
-            if command.contains("\r") || command.contains("\n") {
-				log(format!("Terminal {}: {}", id, command_full_clone.clone()));
-				command_full_clone = String::new();
+				Err(_) => {
+					let new_output = output_list_clone.lock().await;
+					output_clone = new_output[id].clone();
+				}
 			}
 
+			command_full_clone.push_str(command.as_str());
 
+            if command_full_clone.contains("\r") || command_full_clone.contains("\n") {
+				log(format!("Terminal {}: {}", id, command_full_clone.clone()));
+				let mut title = "termtitle".to_string();
+				title.push_str(&command_full_clone);
+				let output_clone2 = output_clone.clone();
+
+				match output_clone2.send(title.clone()).await {
+					Ok(_) => {
+						command_full_clone = String::new();
+					},
+
+					Err(_) => {
+						thread::sleep(time::Duration::from_millis(500));
+						let new_output = output_list_clone.lock().await;
+						output_clone = new_output[id].clone();
+					}
+				}
+				task::spawn(async move {
+					let mut file = File::create(format!("titles/title{}.txt", id).as_str()).expect("failed to replace title file");
+                    file.write_all(title.as_bytes()).expect(
+                        format!("unable to write title of terminal {} in title file", id)
+                            .as_str()
+						)
+				});
+			}
 
 			if command_full_clone == "KillTerm\n" {
 				log(format!("Terminal {}: Killing", id));

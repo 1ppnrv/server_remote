@@ -2,5 +2,6 @@
 /output*
 log.txt
 /output*
-/cmdhists*
+/titles*
 .editorconfig
+log.txt

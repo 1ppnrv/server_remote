@@ -35,7 +35,17 @@ async function openwsterm(terminal) {
         updateclass(terminal, 2)
     });
     terminal.ws.addEventListener("message", (msg) => {
-       terminal.terminal.write(msg.data)
+		let data = msg.data
+		if (data.startsWith("termtitle")){
+			let name = data.split("termtitle")[1]
+			console.log(name)
+			if (name != ""){
+				terminal.name = name
+				terminal.btn.textContent = name
+			}
+		}else{
+       		terminal.terminal.write(data)
+		}
     })
     
     terminals[terminal.id] = terminal
@@ -81,6 +91,8 @@ async function newterm() {
         ws: null,
 		terminal: new Terminal(),
         id: nbterm,
+		name: "new",
+		btn: null,
         status: 0, // 0: Connecting, 1: Connected, 2: Err
         output: ""
     }
@@ -88,11 +100,13 @@ async function newterm() {
 	const new_button = document.createElement("button")
 	new_button.id = `terminalbtn${nbterm}`
 	new_button.className = "terminalbtn"
-	new_button.textContent = `${nbterm + 1}`
+	new_button.textContent = "new"
 	new_button.onclick = function () {
 		terminalselect(terminal.id)
 	}
 	document.getElementById("terminalselector").appendChild(new_button)
+
+	terminal.btn = new_button
 
 	const newterminaldiv = document.createElement("div")
 	newterminaldiv.id = `terminal_${nbterm}`
@@ -138,8 +152,8 @@ async function fetchhists() {
     let hists = text.split("endterm")
 
     for (let i = 0; i < hists.length - 1; i++) {
-		await newterm()
 		text = hists[hists.length-2-i]
+		await newterm()
 		terminals[i].terminal.write(text)
     }
     if (hists.length == 1) {

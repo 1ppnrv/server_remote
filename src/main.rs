@@ -54,10 +54,6 @@ async fn main() {
         fs::create_dir("output").expect("failed to create output dir");
     }
 
-    if !DirPath::new("cmdhists").exists() {
-        fs::create_dir("cmdhists").expect("failed to create cmdhists dir");
-    }
-
     log("Server started".to_string());
 
     let listener = tokio::net::TcpListener::bind("127.0.0.1:10001")
@@ -154,46 +150,6 @@ async fn get_handler(Path(arg): Path<String>) -> Response {
                 .status(200)
                 .header("Content-Type", "text/html")
                 .body(Body::from(hists))
-                .expect("Failed to build response")
-                .into_response()
-        }
-
-        "cmdhists" => {
-            let mut cmdhists = "{".to_string();
-            let cmdhist_files = fs::read_dir("./cmdhists/").expect("unable to read cmdhist dir");
-            let cmdhist_files_count = fs::read_dir("./cmdhists/")
-                .expect("unable to read cmdhist dir")
-                .count();
-
-            for (mut i, cmdhist) in cmdhist_files.enumerate() {
-                i = cmdhist_files_count - i;
-
-				let cmdhists_contents = fs::read_to_string(cmdhist.unwrap().path()).expect("failed to read output");
-				let cmdhists_contents_split:Vec<&str> = cmdhists_contents.split("\n").collect();
-
-                cmdhists.push_str(
-                    format!(
-                        "\"{}\": [",
-                        i
-                    )
-                    .as_str(),
-                );
-
-				for cmd in cmdhists_contents_split{
-					cmdhists.push_str(format!("\"{}\",", cmd).as_str());
-				}
-
-				cmdhists.push_str("],");
-				cmdhists = str::replace(cmdhists.as_str(), ",]", "]");
-            }
-
-            cmdhists.push_str("}");
-            cmdhists = str::replace(cmdhists.as_str(), ",}", "}");
-
-            Response::builder()
-                .status(200)
-                .header("Content-Type", "text/html")
-                .body(Body::from(cmdhists))
                 .expect("Failed to build response")
                 .into_response()
         }
@@ -357,7 +313,11 @@ async fn pty_socket(
         }
     };
 
+	let title = fs::read_to_string(format!("titles/title{}.txt", id)).expect("unable to read title file");
+
     let (mut writer, mut receiver) = socket.split();
+
+	writer.send(Message::Text(title.into())).await.expect("unable to send title");
 
     //output receiving from pty and sending in WS
     tokio::spawn(async move {
