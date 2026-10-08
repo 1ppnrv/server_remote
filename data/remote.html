@@ -5,24 +5,23 @@
     <title>Console - MrBap's Server</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/remote.css">
+	<link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
+	<script src="node_modules/@xterm/xterm/lib/xterm.js"></script>
 </head>
 
 <body>
     <div id="menu">
-        <button class="menubtn" id="consoleBtn">Console</button>
-        <button class="menubtn" id="filesBtn">Files</button>
-    </div>
-    <div id="consolecontainer">
-        <div id="btnsdiv">
+		<select id="select_menu">
+			<option value="Console">Processus</option>
+			<option value="Files">Fichiers</option>
+		</select>
+		<div id="btnsdiv">
             <div id="terminalselector">
             </div>
-            <button id="launchkill">New</button>
+            <button id="launch">New</button>
         </div>
-        <p id="output"></p>
-        <div id="command-field">
-            <input type="text" id="cmdtextfield">
-            <button id="send"><img id="sendimg" alt="send" src="send.png"></button>
-        </div>
+    </div>
+    <div id="consolecontainer">
     </div>
     <script src="scripts/remote.js"></script>
 </body>
