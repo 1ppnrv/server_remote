@@ -69,7 +69,7 @@ pub async fn new_pty(
         })
         .expect(format!("unable to spawn pair for terminal{}", id).as_str());
 
-    let mut child = if consts::OS == "windows" {
+    let mut _child = if consts::OS == "windows" {
         pair.slave
             .spawn_command(CommandBuilder::new("powershell"))
             .expect(format!("unable to spawn child for terminal{}", id).as_str())
@@ -150,6 +150,7 @@ pub async fn new_pty(
     //command input from sender
     tokio::spawn(async move {
 		let mut command_full = String::new();
+		let mut last_command = String::new();
         loop {
 
 			let mut command_full_clone = command_full.clone();
@@ -157,58 +158,8 @@ pub async fn new_pty(
                 Some(cmd) => cmd,
                 None => break,
             };
-
-			match output_clone.send("termtitle".to_string()).await {
-				Ok(_) => {},
-
-				Err(_) => {
-					let new_output = output_list_clone.lock().await;
-					output_clone = new_output[id].clone();
-				}
-			}
-
-			command_full_clone.push_str(command.as_str());
-
-            if command_full_clone.contains("\r") || command_full_clone.contains("\n") {
-				log(format!("Terminal {}: {}", id, command_full_clone.clone()));
-				let mut title = "termtitle".to_string();
-				title.push_str(&command_full_clone);
-				let output_clone2 = output_clone.clone();
-
-				match output_clone2.send(title.clone()).await {
-					Ok(_) => {
-						command_full_clone = String::new();
-					},
-
-					Err(_) => {
-						thread::sleep(time::Duration::from_millis(500));
-						let new_output = output_list_clone.lock().await;
-						output_clone = new_output[id].clone();
-					}
-				}
-				task::spawn(async move {
-					let mut file = File::create(format!("titles/title{}.txt", id).as_str()).expect("failed to replace title file");
-                    file.write_all(title.as_bytes()).expect(
-                        format!("unable to write title of terminal {} in title file", id)
-                            .as_str()
-						)
-				});
-			}
-
-			if command_full_clone == "KillTerm\n" {
-				log(format!("Terminal {}: Killing", id));
-				writer.write(b"\x03").expect(format!("Terminal {}: failed to write in pty input", id).as_str());
-				writer.flush().expect(format!("Terminal {}: failed to flush pty input", id).as_str());
-				tokio::time::sleep(time::Duration::from_millis(50)).await;
-				{
-					let mut running = running.lock().await;
-					running[id] = 0;
-				}
-				child.kill().ok();
-				break;
-			}
-
-            match command.as_str() {
+			
+			match command.as_str() {
                 "" => {}
                 command => {
                     writer
@@ -219,6 +170,49 @@ pub async fn new_pty(
                         .expect(format!("Terminal {}: failed to flush pty input", id).as_str());
                 }
             }
+
+			command_full_clone.push_str(command.as_str());
+
+            if command_full_clone.contains("\r") || command_full_clone.contains("\n") {
+				log(format!("Terminal {}: {}", id, command_full_clone.clone()));
+				let mut title = "termtitle".to_string();
+				title.push_str(&command_full_clone);
+				let output_clone2 = output_clone.clone();
+
+				match output_clone2.send(title.clone()).await {
+					Ok(_) => {},
+
+					Err(_) => {
+						last_command = command_full_clone.clone();
+						thread::sleep(time::Duration::from_millis(500));
+						let new_output = output_list_clone.lock().await;
+						output_clone = new_output[id].clone();
+					}
+				}
+				command_full_clone = String::new();
+				task::spawn(async move {
+					let mut file = File::create(format!("titles/title{}.txt", id).as_str()).expect("failed to replace title file");
+                    file.write_all(title.as_bytes()).expect(
+                        format!("unable to write title of terminal {} in title file", id)
+                            .as_str()
+						)
+				});
+			}
+
+			if ! last_command.is_empty(){
+				match output_clone.send(last_command.clone()).await {
+					Ok(_) => {
+						last_command = String::new();
+					},
+
+					Err(_) => {
+						thread::sleep(time::Duration::from_millis(500));
+						let new_output = output_list_clone.lock().await;
+						output_clone = new_output[id].clone();
+					}
+				}
+			}
+
             tokio::time::sleep(time::Duration::from_millis(100)).await;
 			command_full = command_full_clone.clone()
         }

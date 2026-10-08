@@ -6419,3 +6419,253 @@
 [2026-10-08 17:16:15] WS 2: Open
 [2026-10-08 17:16:33] Terminal 2: curl
 [2026-10-08 17:16:39] Terminal 2: curl epitr.fr
+[2026-10-08 17:20:51] WS 2: bad msg, ws closed
+[2026-10-08 17:20:51] WS 0: bad msg, ws closed
+[2026-10-08 17:20:51] WS 1: bad msg, ws closed
+[2026-10-08 17:20:51] WS 1: Closing
+[2026-10-08 17:20:51] WS 0: Closing
+[2026-10-08 17:20:51] WS 2: Closing
+[2026-10-08 17:20:51] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:20:51] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:20:51] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:20:51] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:20:51] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:20:51] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:20:53] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:20:53] POST | /pwd | 200
+[2026-10-08 17:20:53] Password OK
+[2026-10-08 17:20:53] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:20:53] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:20:53] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:20:53] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:20:53] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:20:53] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:20:53] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:20:53] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:20:53] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:20:53] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:20:53] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:20:53] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:20:53] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:20:53] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:20:53] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:20:53] WS 0: Open
+[2026-10-08 17:20:53] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:20:53] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:20:53] WS 1: Open
+[2026-10-08 17:20:53] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:20:53] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:20:53] WS 2: Open
+[2026-10-08 17:20:58] Terminal 2: ghbb
+[2026-10-08 17:23:07] Server started
+[2026-10-08 17:23:11] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:23:11] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:23:11] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:23:11] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:23:11] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:23:11] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:23:11] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:23:11] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:23:11] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:23:11] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:23:11] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:23:11] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:23:11] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:23:11] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:23:11] Terminal 0: Ready
+[2026-10-08 17:23:11] WS 0: Open
+[2026-10-08 17:23:11] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:23:11] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:23:11] Terminal 1: Ready
+[2026-10-08 17:23:11] WS 1: Open
+[2026-10-08 17:23:11] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:23:11] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:23:11] Terminal 2: Ready
+[2026-10-08 17:23:11] WS 2: Open
+[2026-10-08 17:31:29] Server started
+[2026-10-08 17:31:32] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:31:32] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:31:32] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:31:32] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:31:32] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:31:32] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:31:33] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:31:33] POST | /pwd | 200
+[2026-10-08 17:31:33] Password OK
+[2026-10-08 17:31:33] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:31:33] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:31:33] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:31:33] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:31:33] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:31:33] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:31:33] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:31:33] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:31:33] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:31:33] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:31:33] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:31:33] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:31:33] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:31:33] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:31:33] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:31:33] Terminal 0: Ready
+[2026-10-08 17:31:33] WS 0: Open
+[2026-10-08 17:31:33] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:31:33] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:31:33] Terminal 1: Ready
+[2026-10-08 17:31:33] WS 1: Open
+[2026-10-08 17:31:34] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:31:34] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:31:34] Terminal 2: Ready
+[2026-10-08 17:31:34] WS 2: Open
+[2026-10-08 17:31:42] Terminal 2: singeeeefd
+[2026-10-08 17:32:17] Terminal 2: s
+[2026-10-08 17:33:22] Server started
+[2026-10-08 17:33:23] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:33:23] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:33:23] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-08 17:33:23] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-08 17:33:23] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-08 17:33:23] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-08 17:33:26] 127.0.0.1 | POST /login/pwd | incoming
+[2026-10-08 17:33:26] POST | /pwd | 200
+[2026-10-08 17:33:26] Password OK
+[2026-10-08 17:33:26] 127.0.0.1 | POST /login/pwd | 200 OK
+[2026-10-08 17:33:26] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:33:26] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:33:26] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:33:26] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:33:26] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:33:26] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:33:26] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:33:26] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:33:26] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:33:26] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:33:26] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:33:26] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:33:26] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:33:26] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:33:26] Terminal 0: Ready
+[2026-10-08 17:33:26] WS 0: Open
+[2026-10-08 17:33:26] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:33:26] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:33:26] Terminal 1: Ready
+[2026-10-08 17:33:26] WS 1: Open
+[2026-10-08 17:33:26] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:33:26] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:33:26] Terminal 2: Ready
+[2026-10-08 17:33:26] WS 2: Open
+[2026-10-08 17:33:43] Terminal 2: [24~e
+[2026-10-08 17:33:45] Terminal 2: ss
+[2026-10-08 17:34:20] WS 1: bad msg, ws closed
+[2026-10-08 17:34:20] WS 2: bad msg, ws closed
+[2026-10-08 17:34:20] WS 0: bad msg, ws closed
+[2026-10-08 17:34:20] WS 1: Closing
+[2026-10-08 17:34:20] WS 2: Closing
+[2026-10-08 17:34:20] WS 0: Closing
+[2026-10-08 17:34:20] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:34:20] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:34:20] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:34:20] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:34:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:34:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:34:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:34:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:34:20] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:34:20] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:34:20] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:34:20] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:34:20] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:34:20] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:34:20] WS 0: Open
+[2026-10-08 17:34:21] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:34:21] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:34:21] WS 1: Open
+[2026-10-08 17:34:21] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:34:21] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:34:21] WS 2: Open
+[2026-10-08 17:34:23] Terminal 2: pklk
+[2026-10-08 17:34:26] Terminal 2: s
+[2026-10-08 17:38:38] WS 0: bad msg, ws closed
+[2026-10-08 17:38:38] WS 1: bad msg, ws closed
+[2026-10-08 17:38:38] WS 2: bad msg, ws closed
+[2026-10-08 17:38:38] WS 1: Closing
+[2026-10-08 17:38:38] WS 0: Closing
+[2026-10-08 17:38:38] WS 2: Closing
+[2026-10-08 17:38:38] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:38:38] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:38:38] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:38:38] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:38:38] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:38:38] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:38:38] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:38:38] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:38:38] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:38:38] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:38:38] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:38:38] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:38:38] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:38:38] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:38:38] WS 0: Open
+[2026-10-08 17:38:38] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:38:38] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:38:38] WS 1: Open
+[2026-10-08 17:38:38] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:38:38] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:38:38] WS 2: Open
+[2026-10-08 17:38:41] Terminal 2: si
+[2026-10-08 17:39:12] Server started
+[2026-10-08 17:39:14] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:39:14] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:39:14] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:39:14] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:39:14] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:39:14] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:39:14] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:39:14] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:39:14] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:39:14] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:39:14] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:39:14] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:39:14] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:39:14] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:39:14] Terminal 0: Ready
+[2026-10-08 17:39:14] WS 0: Open
+[2026-10-08 17:39:14] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:39:14] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:39:14] Terminal 1: Ready
+[2026-10-08 17:39:14] WS 1: Open
+[2026-10-08 17:39:14] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:39:14] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:39:14] Terminal 2: Ready
+[2026-10-08 17:39:14] WS 2: Open
+[2026-10-08 17:39:18] Terminal 2: sis
+[2026-10-08 17:39:23] Terminal 2: psl
+[2026-10-08 17:39:28] Terminal 2: exit
+[2026-10-08 17:39:37] WS 2: bad msg, ws closed
+[2026-10-08 17:39:37] WS 1: bad msg, ws closed
+[2026-10-08 17:39:37] WS 0: bad msg, ws closed
+[2026-10-08 17:39:37] WS 0: Closing
+[2026-10-08 17:39:37] WS 1: Closing
+[2026-10-08 17:39:37] 127.0.0.1 | GET /remote | incoming
+[2026-10-08 17:39:37] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-08 17:39:37] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-08 17:39:37] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-08 17:39:37] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-08 17:39:37] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-08 17:39:37] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-08 17:39:37] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-08 17:39:37] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-08 17:39:37] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-08 17:39:37] WS 2: Err sending output: WebSocket protocol error: Sending after closing is not allowed
+[2026-10-08 17:39:38] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-08 17:39:38] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-08 17:39:38] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-08 17:39:38] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-08 17:39:38] WS 0: Open
+[2026-10-08 17:39:38] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-08 17:39:38] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-08 17:39:38] WS 1: Open
+[2026-10-08 17:39:38] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-08 17:39:38] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-08 17:39:38] WS 2: Open
+[2026-10-08 17:39:40] Terminal 2: zdsqdsd
