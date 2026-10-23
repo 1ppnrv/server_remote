@@ -6669,3 +6669,43 @@
 [2026-10-08 17:39:38] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
 [2026-10-08 17:39:38] WS 2: Open
 [2026-10-08 17:39:40] Terminal 2: zdsqdsd
+[2026-10-09 08:56:24] Server started
+[2026-10-09 11:01:20] 127.0.0.1 | GET / | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET / | 200 OK
+[2026-10-09 11:01:20] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-09 11:01:20] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-09 11:01:20] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-09 11:01:20] POST | /cookie | 200
+[2026-10-09 11:01:20] Password OK
+[2026-10-09 11:01:20] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-09 11:01:20] 127.0.0.1 | GET /remote | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-09 11:01:20] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-09 11:01:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-09 11:01:20] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-09 11:01:20] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-09 11:01:20] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-09 11:01:20] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-09 11:01:20] Terminal 0: Ready
+[2026-10-09 11:01:20] WS 0: Open
+[2026-10-09 11:01:20] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-09 11:01:20] Terminal 1: Ready
+[2026-10-09 11:01:20] WS 1: Open
+[2026-10-09 11:01:20] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-09 11:01:20] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-09 11:01:20] Terminal 2: Ready
+[2026-10-09 11:01:20] WS 2: Open
+[2026-10-09 11:02:41] 127.0.0.1 | GET /ws/3 | incoming
+[2026-10-09 11:02:41] 127.0.0.1 | GET /ws/3 | 101 Switching Protocols
+[2026-10-09 11:02:41] Creating output file for terminal 3
+[2026-10-09 11:02:41] Terminal 3: Ready
+[2026-10-09 11:02:41] WS 3: Open

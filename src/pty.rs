@@ -36,27 +36,27 @@ pub async fn new_pty(
     mut output: Sender<String>,
     outputs_list: Arc<Mutex<Vec<Sender<String>>>>,
 ) {
-	{
-		let output_path = format!("output/output{}.txt", id);
+    {
+        let output_path = format!("output/output{}.txt", id);
 
-		if !DirPath::new(output_path.as_str()).exists() {
-			if !DirPath::new("output").exists() {
-				fs::create_dir("output").expect("failed to create output dir");
-			}
-			log(format!("Creating output file for terminal {}", id));
-			let _ = File::create(output_path.as_str());
-		}
+        if !DirPath::new(output_path.as_str()).exists() {
+            if !DirPath::new("output").exists() {
+                fs::create_dir("output").expect("failed to create output dir");
+            }
+            log(format!("Creating output file for terminal {}", id));
+            let _ = File::create(output_path.as_str());
+        }
 
-		let output_path = format!("titles/title{}.txt", id);
+        let output_path = format!("titles/title{}.txt", id);
 
-		if !DirPath::new(output_path.as_str()).exists() {
-			if !DirPath::new("titles").exists() {
-				fs::create_dir("titles").expect("failed to create output dir");
-			}
-			log(format!("Creating title file for terminal {}", id));
-			let _ = File::create(output_path.as_str());
-		}
-	}
+        if !DirPath::new(output_path.as_str()).exists() {
+            if !DirPath::new("titles").exists() {
+                fs::create_dir("titles").expect("failed to create output dir");
+            }
+            log(format!("Creating title file for terminal {}", id));
+            let _ = File::create(output_path.as_str());
+        }
+    }
 
     let pty_system = native_pty_system();
 
@@ -67,36 +67,36 @@ pub async fn new_pty(
             pixel_width: 0,
             pixel_height: 0,
         })
-        .expect(format!("unable to spawn pair for terminal{}", id).as_str());
+        .unwrap_or_else(|_| panic!("unable to spawn pair for terminal{}", id));
 
     let mut _child = if consts::OS == "windows" {
         pair.slave
             .spawn_command(CommandBuilder::new("powershell"))
-            .expect(format!("unable to spawn child for terminal{}", id).as_str())
+            .unwrap_or_else(|_| panic!("unable to spawn child for terminal{}", id))
     } else {
         pair.slave
             .spawn_command(CommandBuilder::new("bash"))
-            .expect(format!("unable to spawn child for terminal{}", id).as_str())
+            .unwrap_or_else(|_| panic!("unable to spawn child for terminal{}", id))
     };
 
     let mut writer = pair
         .master
         .take_writer()
-        .expect(format!("unable to take writer for terminal{}", id).as_str());
+        .unwrap_or_else(|_| panic!("unable to take writer for terminal{}", id));
     let mut reader = pair
         .master
         .try_clone_reader()
-        .expect(format!("unable to clone reader for terminal{}", id).as_str());
+        .unwrap_or_else(|_| panic!("unable to clone reader for terminal{}", id));
 
     let running_clone: Arc<Mutex<Vec<u8>>> = running.clone();
-	let mut output_clone = output.clone();
-	let output_list_clone = outputs_list.clone();
+    let mut output_clone = output.clone();
+    let output_list_clone = outputs_list.clone();
 
     //output reading and sending in queue
     tokio::task::spawn_blocking(move || {
         let mut term_output = "pklk".to_string();
         loop {
-            if term_output == "pklk".to_string() {
+            if term_output == "pklk" {
                 let mut buf = [0u8; 1024];
 
                 let n = match reader.read(&mut buf) {
@@ -117,21 +117,21 @@ pub async fn new_pty(
                 //log(format!("Terminal {}: sending output", id));
                 term_output = String::from_utf8_lossy(&buf[..n]).to_string();
 
-				let term_output_clone = term_output.clone();
+                let term_output_clone = term_output.clone();
 
                 task::spawn(async move {
                     let mut file = OpenOptions::new()
                         .append(true)
                         .create(true)
                         .open(format!("output/output{}.txt", id))
-                        .expect(format!("failed to open output{} file", id).as_str());
-                    file.write_all(term_output_clone.as_bytes()).expect(
-                        format!("unable to write output of terminal {} in output file", id)
-                            .as_str(),
-                    );
+                        .unwrap_or_else(|_| panic!("failed to open output{} file", id));
+                    file.write_all(term_output_clone.as_bytes())
+                        .unwrap_or_else(|_| {
+                            panic!("unable to write output of terminal {} in output file", id)
+                        });
                 });
             }
-			// log("sending output".to_string());
+            // log("sending output".to_string());
             match output.blocking_send(term_output.clone()) {
                 Ok(_) => term_output = "pklk".to_string(),
 
@@ -149,72 +149,71 @@ pub async fn new_pty(
 
     //command input from sender
     tokio::spawn(async move {
-		let mut command_full = String::new();
-		let mut last_command = String::new();
+        let mut command_full = String::new();
+        let mut last_command = String::new();
         loop {
-
-			let mut command_full_clone = command_full.clone();
+            let mut command_full_clone = command_full.clone();
             let command = match input.recv().await {
                 Some(cmd) => cmd,
                 None => break,
             };
-			
-			match command.as_str() {
+
+            match command.as_str() {
                 "" => {}
                 command => {
-                    writer
-                        .write_all(command.as_bytes())
-                        .expect(format!("Terminal {}: failed to write in pty input", id).as_str());
+                    writer.write_all(command.as_bytes()).unwrap_or_else(|_| {
+                        panic!("Terminal {}: failed to write in pty input", id)
+                    });
                     writer
                         .flush()
-                        .expect(format!("Terminal {}: failed to flush pty input", id).as_str());
+                        .unwrap_or_else(|_| panic!("Terminal {}: failed to flush pty input", id));
                 }
             }
 
-			command_full_clone.push_str(command.as_str());
+            command_full_clone.push_str(command.as_str());
 
             if command_full_clone.contains("\r") || command_full_clone.contains("\n") {
-				log(format!("Terminal {}: {}", id, command_full_clone.clone()));
-				let mut title = "termtitle".to_string();
-				title.push_str(&command_full_clone);
-				let output_clone2 = output_clone.clone();
+                log(format!("Terminal {}: {}", id, command_full_clone.clone()));
+                let mut title = "termtitle".to_string();
+                title.push_str(&command_full_clone);
+                let output_clone2 = output_clone.clone();
 
-				match output_clone2.send(title.clone()).await {
-					Ok(_) => {},
+                match output_clone2.send(title.clone()).await {
+                    Ok(_) => {}
 
-					Err(_) => {
-						last_command = command_full_clone.clone();
-						thread::sleep(time::Duration::from_millis(500));
-						let new_output = output_list_clone.lock().await;
-						output_clone = new_output[id].clone();
-					}
-				}
-				command_full_clone = String::new();
-				task::spawn(async move {
-					let mut file = File::create(format!("titles/title{}.txt", id).as_str()).expect("failed to replace title file");
-                    file.write_all(title.as_bytes()).expect(
-                        format!("unable to write title of terminal {} in title file", id)
-                            .as_str()
-						)
-				});
-			}
+                    Err(_) => {
+                        last_command = command_full_clone.clone();
+                        thread::sleep(time::Duration::from_millis(500));
+                        let new_output = output_list_clone.lock().await;
+                        output_clone = new_output[id].clone();
+                    }
+                }
+                command_full_clone = String::new();
+                task::spawn(async move {
+                    let mut file = File::create(format!("titles/title{}.txt", id).as_str())
+                        .expect("failed to replace title file");
+                    file.write_all(title.as_bytes()).unwrap_or_else(|_| {
+                        panic!("unable to write title of terminal {} in title file", id)
+                    });
+                });
+            }
 
-			if ! last_command.is_empty(){
-				match output_clone.send(last_command.clone()).await {
-					Ok(_) => {
-						last_command = String::new();
-					},
+            if !last_command.is_empty() {
+                match output_clone.send(last_command.clone()).await {
+                    Ok(_) => {
+                        last_command = String::new();
+                    }
 
-					Err(_) => {
-						thread::sleep(time::Duration::from_millis(500));
-						let new_output = output_list_clone.lock().await;
-						output_clone = new_output[id].clone();
-					}
-				}
-			}
+                    Err(_) => {
+                        thread::sleep(time::Duration::from_millis(500));
+                        let new_output = output_list_clone.lock().await;
+                        output_clone = new_output[id].clone();
+                    }
+                }
+            }
 
             tokio::time::sleep(time::Duration::from_millis(100)).await;
-			command_full = command_full_clone.clone()
+            command_full = command_full_clone.clone()
         }
     });
 

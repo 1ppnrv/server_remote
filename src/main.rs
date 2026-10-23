@@ -85,16 +85,17 @@ async fn log_middleware(request: Request, next: Next) -> Response {
     });
 
     let path = request.uri().path();
-    let requires_cookie = matches!(path, "/remote" | "/files" | "/outputhist")
-        || path.starts_with("/ws/");
+    let requires_cookie =
+        matches!(path, "/remote" | "/files" | "/outputhist") || path.starts_with("/ws/");
     let has_valid_cookie = request
         .headers()
         .get(axum::http::header::COOKIE)
         .and_then(|value| value.to_str().ok())
         .is_some_and(|cookies| {
-            cookies
-                .split(';')
-                .any(|cookie| cookie.trim() == "mrbap_remote=poklokpondpart" || cookie.trim() == "auth=poklokpondpart")
+            cookies.split(';').any(|cookie| {
+                cookie.trim() == "mrbap_remote=poklokpondpart"
+                    || cookie.trim() == "auth=poklokpondpart"
+            })
         });
 
     let response = if requires_cookie && !has_valid_cookie {
@@ -199,14 +200,12 @@ async fn get_handler(Path(arg): Path<String>) -> Response {
                         .expect("Failed to build response")
                         .into_response()
                 }
-                Err(_) => {
-                    Response::builder()
-                        .status(StatusCode::NOT_FOUND)
-                        .header("Content-Type", "text/plain")
-                        .body(Body::from(format!("skill issue: {} not found", arg)))
-                        .expect("Failed to build response")
-                        .into_response()
-                }
+                Err(_) => Response::builder()
+                    .status(StatusCode::NOT_FOUND)
+                    .header("Content-Type", "text/plain")
+                    .body(Body::from(format!("skill issue: {} not found", arg)))
+                    .expect("Failed to build response")
+                    .into_response(),
             }
         }
     }
@@ -330,11 +329,15 @@ async fn pty_socket(
         }
     };
 
-	let title = fs::read_to_string(format!("titles/title{}.txt", id)).expect("unable to read title file");
+    let title =
+        fs::read_to_string(format!("titles/title{}.txt", id)).expect("unable to read title file");
 
     let (mut writer, mut receiver) = socket.split();
 
-	writer.send(Message::Text(title.into())).await.expect("unable to send title");
+    writer
+        .send(Message::Text(title.into()))
+        .await
+        .expect("unable to send title");
 
     //output receiving from pty and sending in WS
     tokio::spawn(async move {
@@ -342,7 +345,7 @@ async fn pty_socket(
             let msg = receiver_pty.recv().await;
             match msg {
                 Some(text) => {
-                    if text == "WS_Stop".to_string() {
+                    if text == "WS_Stop" {
                         log(format!("WS {}: Closing", id));
                         break;
                     }
@@ -362,7 +365,7 @@ async fn pty_socket(
                     writer
                         .send(Message::Text("Terminal reception error".into()))
                         .await
-                        .expect(format!("WS {}: unable to send error", id).as_str());
+                        .unwrap_or_else(|_| panic!("WS {}: unable to send error", id));
                     break;
                 }
             }
@@ -376,7 +379,7 @@ async fn pty_socket(
     loop {
         match receiver.next().await {
             Some(Ok(Message::Text(text))) => {
-                if text != "ping".to_string() {
+                if text != "ping" {
                     match sender_pty.send(text.to_string()).await {
                         Ok(_) => {}
                         Err(e) => log(format!(

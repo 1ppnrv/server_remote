@@ -1,7 +1,8 @@
-/target*
-/output*
+/target
+/output
 log.txt
-/output*
-/titles*
+/output
+/titles
+/release
 .editorconfig
 log.txt
