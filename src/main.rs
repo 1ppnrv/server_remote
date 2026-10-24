@@ -329,15 +329,15 @@ async fn pty_socket(
         }
     };
 
-    let title =
-        fs::read_to_string(format!("titles/title{}.txt", id)).expect("unable to read title file");
+    // let title =
+    //     fs::read_to_string(format!("titles/title{}.txt", id)).expect("unable to read title file");
 
     let (mut writer, mut receiver) = socket.split();
 
-    writer
-        .send(Message::Text(title.into()))
-        .await
-        .expect("unable to send title");
+    // writer
+    //     .send(Message::Text(title.into()))
+    //     .await
+    //     .expect("unable to send title");
 
     //output receiving from pty and sending in WS
     tokio::spawn(async move {
@@ -350,7 +350,8 @@ async fn pty_socket(
                         break;
                     }
                     match writer.send(Message::Text(text.into())).await {
-                        Ok(_) => {}
+                        Ok(_) => {
+						}
                         Err(e) => {
                             log(format!("WS {}: Err sending output: {}", id, e));
                             break;
@@ -369,7 +370,7 @@ async fn pty_socket(
                     break;
                 }
             }
-            tokio::time::sleep(time::Duration::from_millis(200)).await;
+            tokio::time::sleep(time::Duration::from_millis(5)).await;
         }
     });
 

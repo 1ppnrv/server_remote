@@ -6709,3 +6709,1748 @@
 [2026-10-09 11:02:41] Creating output file for terminal 3
 [2026-10-09 11:02:41] Terminal 3: Ready
 [2026-10-09 11:02:41] WS 3: Open
+[2026-10-24 08:28:33.588] Server started
+[2026-10-24 08:28:38.407] 127.0.0.1 | GET / | incoming
+[2026-10-24 08:28:38.408] 127.0.0.1 | GET / | 200 OK
+[2026-10-24 08:28:38.519] 127.0.0.1 | GET /styles/index.css | incoming
+[2026-10-24 08:28:38.520] 127.0.0.1 | GET /styles/index.css | 200 OK
+[2026-10-24 08:28:38.524] 127.0.0.1 | GET /scripts/index.js | incoming
+[2026-10-24 08:28:38.524] 127.0.0.1 | GET /scripts/index.js | 200 OK
+[2026-10-24 08:28:38.585] POST | /cookie | 200
+[2026-10-24 08:28:38.585] 127.0.0.1 | POST /login/cookie | incoming
+[2026-10-24 08:28:38.585] Password OK
+[2026-10-24 08:28:38.585] 127.0.0.1 | POST /login/cookie | 200 OK
+[2026-10-24 08:28:38.599] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-24 08:28:38.599] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-24 08:28:38.641] 127.0.0.1 | GET /remote | incoming
+[2026-10-24 08:28:38.642] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-24 08:28:38.718] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-24 08:28:38.718] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-24 08:28:38.718] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-24 08:28:38.718] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-24 08:28:38.720] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-24 08:28:38.721] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-24 08:28:38.722] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-24 08:28:38.723] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-24 08:28:38.823] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-24 08:28:38.825] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-24 08:28:38.871] 127.0.0.1 | GET /favicon.ico | 404 Not Found
+[2026-10-24 08:28:38.871] 127.0.0.1 | GET /favicon.ico | incoming
+[2026-10-24 08:28:38.890] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-24 08:28:38.890] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-24 08:28:38.893] Terminal 0: Ready
+[2026-10-24 08:28:38.894] WS 0: Open
+[2026-10-24 08:28:38.916] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-24 08:28:38.916] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-24 08:28:38.917] Terminal 1: Ready
+[2026-10-24 08:28:38.918] WS 1: Open
+[2026-10-24 08:28:38.924] readed output
+[2026-10-24 08:28:38.924] send output
+[2026-10-24 08:28:38.935] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-24 08:28:38.935] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-24 08:28:38.939] Terminal 2: Ready
+[2026-10-24 08:28:38.940] WS 2: Open
+[2026-10-24 08:28:38.942] readed output
+[2026-10-24 08:28:38.943] send output
+[2026-10-24 08:28:38.953] 127.0.0.1 | GET /ws/3 | incoming
+[2026-10-24 08:28:38.953] 127.0.0.1 | GET /ws/3 | 101 Switching Protocols
+[2026-10-24 08:28:38.955] Terminal 3: Ready
+[2026-10-24 08:28:38.956] WS 3: Open
+[2026-10-24 08:28:38.959] readed output
+[2026-10-24 08:28:38.960] send output
+[2026-10-24 08:28:38.975] readed output
+[2026-10-24 08:28:38.976] send output
+[2026-10-24 08:28:50.083] readed output
+[2026-10-24 08:28:50.085] send output
+[2026-10-24 08:39:15.669] Server started
+[2026-10-24 08:39:18.022] 127.0.0.1 | GET /remote | incoming
+[2026-10-24 08:39:18.022] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-24 08:39:18.104] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-24 08:39:18.105] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-24 08:39:18.108] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-24 08:39:18.108] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-24 08:39:18.109] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-24 08:39:18.110] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-24 08:39:18.118] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-24 08:39:18.118] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-24 08:39:18.169] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-24 08:39:18.169] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-24 08:39:18.196] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-24 08:39:18.196] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-24 08:39:18.199] Terminal 0: Ready
+[2026-10-24 08:39:18.199] WS 0: Open
+[2026-10-24 08:39:18.216] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-24 08:39:18.216] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-24 08:39:18.218] Terminal 1: Ready
+[2026-10-24 08:39:18.218] WS 1: Open
+[2026-10-24 08:39:18.220] read output
+[2026-10-24 08:39:18.220] queuing output
+[2026-10-24 08:39:18.220] queued output
+[2026-10-24 08:39:18.220] dequeued output
+[2026-10-24 08:39:18.220] sending output
+[2026-10-24 08:39:18.220] sent output
+[2026-10-24 08:39:18.235] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-24 08:39:18.235] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-24 08:39:18.237] Terminal 2: Ready
+[2026-10-24 08:39:18.238] WS 2: Open
+[2026-10-24 08:39:18.239] read output
+[2026-10-24 08:39:18.239] queuing output
+[2026-10-24 08:39:18.239] queued output
+[2026-10-24 08:39:18.239] dequeued output
+[2026-10-24 08:39:18.240] sending output
+[2026-10-24 08:39:18.240] sent output
+[2026-10-24 08:39:18.251] 127.0.0.1 | GET /ws/3 | incoming
+[2026-10-24 08:39:18.251] 127.0.0.1 | GET /ws/3 | 101 Switching Protocols
+[2026-10-24 08:39:18.253] Terminal 3: Ready
+[2026-10-24 08:39:18.254] WS 3: Open
+[2026-10-24 08:39:18.263] read output
+[2026-10-24 08:39:18.264] queuing output
+[2026-10-24 08:39:18.264] queued output
+[2026-10-24 08:39:18.264] dequeued output
+[2026-10-24 08:39:18.265] sending output
+[2026-10-24 08:39:18.265] sent output
+[2026-10-24 08:39:18.275] read output
+[2026-10-24 08:39:18.275] queuing output
+[2026-10-24 08:39:18.276] queued output
+[2026-10-24 08:39:18.276] dequeued output
+[2026-10-24 08:39:18.276] sending output
+[2026-10-24 08:39:18.276] sent output
+[2026-10-24 08:39:21.192] received input
+[2026-10-24 08:39:21.192] queued input
+[2026-10-24 08:39:21.192] dequeued input
+[2026-10-24 08:39:21.192] pushing input into pty
+[2026-10-24 08:39:21.192] pushed input
+[2026-10-24 08:39:21.192] begin command_full process
+[2026-10-24 08:39:21.193] read output
+[2026-10-24 08:39:21.193] queuing output
+[2026-10-24 08:39:21.193] queued output
+[2026-10-24 08:39:21.193] dequeued output
+[2026-10-24 08:39:21.193] sending output
+[2026-10-24 08:39:21.194] sent output
+[2026-10-24 08:39:21.459] received input
+[2026-10-24 08:39:21.459] queued input
+[2026-10-24 08:39:21.459] dequeued input
+[2026-10-24 08:39:21.459] pushing input into pty
+[2026-10-24 08:39:21.459] pushed input
+[2026-10-24 08:39:21.459] begin command_full process
+[2026-10-24 08:39:21.460] read output
+[2026-10-24 08:39:21.460] queuing output
+[2026-10-24 08:39:21.460] queued output
+[2026-10-24 08:39:21.460] dequeued output
+[2026-10-24 08:39:21.461] sending output
+[2026-10-24 08:39:21.461] sent output
+[2026-10-24 08:39:21.563] received input
+[2026-10-24 08:39:21.563] queued input
+[2026-10-24 08:39:21.563] dequeued input
+[2026-10-24 08:39:21.563] pushing input into pty
+[2026-10-24 08:39:21.563] pushed input
+[2026-10-24 08:39:21.563] begin command_full process
+[2026-10-24 08:39:21.564] read output
+[2026-10-24 08:39:21.564] queuing output
+[2026-10-24 08:39:21.564] queued output
+[2026-10-24 08:39:21.662] dequeued output
+[2026-10-24 08:39:21.662] sending output
+[2026-10-24 08:39:21.662] sent output
+[2026-10-24 08:39:21.689] received input
+[2026-10-24 08:39:21.689] queued input
+[2026-10-24 08:39:21.689] dequeued input
+[2026-10-24 08:39:21.689] pushing input into pty
+[2026-10-24 08:39:21.689] pushed input
+[2026-10-24 08:39:21.689] begin command_full process
+[2026-10-24 08:39:21.689] read output
+[2026-10-24 08:39:21.690] queuing output
+[2026-10-24 08:39:21.690] queued output
+[2026-10-24 08:39:21.813] received input
+[2026-10-24 08:39:21.814] queued input
+[2026-10-24 08:39:21.814] dequeued input
+[2026-10-24 08:39:21.814] pushing input into pty
+[2026-10-24 08:39:21.814] pushed input
+[2026-10-24 08:39:21.814] begin command_full process
+[2026-10-24 08:39:21.814] read output
+[2026-10-24 08:39:21.814] queuing output
+[2026-10-24 08:39:21.814] queued output
+[2026-10-24 08:39:21.865] dequeued output
+[2026-10-24 08:39:21.865] sending output
+[2026-10-24 08:39:21.865] sent output
+[2026-10-24 08:39:21.885] received input
+[2026-10-24 08:39:21.885] queued input
+[2026-10-24 08:39:21.885] dequeued input
+[2026-10-24 08:39:21.885] pushing input into pty
+[2026-10-24 08:39:21.885] pushed input
+[2026-10-24 08:39:21.885] begin command_full process
+[2026-10-24 08:39:21.886] read output
+[2026-10-24 08:39:21.886] queuing output
+[2026-10-24 08:39:21.886] queued output
+[2026-10-24 08:39:21.889] received input
+[2026-10-24 08:39:21.889] queued input
+[2026-10-24 08:39:21.907] dequeued input
+[2026-10-24 08:39:21.907] pushing input into pty
+[2026-10-24 08:39:21.907] pushed input
+[2026-10-24 08:39:21.907] begin command_full process
+[2026-10-24 08:39:21.908] read output
+[2026-10-24 08:39:21.908] queuing output
+[2026-10-24 08:39:21.908] queued output
+[2026-10-24 08:39:22.023] received input
+[2026-10-24 08:39:22.024] queued input
+[2026-10-24 08:39:22.024] dequeued input
+[2026-10-24 08:39:22.024] pushing input into pty
+[2026-10-24 08:39:22.024] pushed input
+[2026-10-24 08:39:22.024] begin command_full process
+[2026-10-24 08:39:22.024] read output
+[2026-10-24 08:39:22.025] queuing output
+[2026-10-24 08:39:22.025] queued output
+[2026-10-24 08:39:22.066] dequeued output
+[2026-10-24 08:39:22.066] sending output
+[2026-10-24 08:39:22.066] sent output
+[2026-10-24 08:39:22.135] received input
+[2026-10-24 08:39:22.135] queued input
+[2026-10-24 08:39:22.135] dequeued input
+[2026-10-24 08:39:22.135] pushing input into pty
+[2026-10-24 08:39:22.135] pushed input
+[2026-10-24 08:39:22.135] begin command_full process
+[2026-10-24 08:39:22.136] read output
+[2026-10-24 08:39:22.136] queuing output
+[2026-10-24 08:39:22.136] queued output
+[2026-10-24 08:39:22.255] received input
+[2026-10-24 08:39:22.255] queued input
+[2026-10-24 08:39:22.256] dequeued input
+[2026-10-24 08:39:22.256] pushing input into pty
+[2026-10-24 08:39:22.256] pushed input
+[2026-10-24 08:39:22.256] begin command_full process
+[2026-10-24 08:39:22.256] read output
+[2026-10-24 08:39:22.257] queuing output
+[2026-10-24 08:39:22.257] queued output
+[2026-10-24 08:39:22.267] dequeued output
+[2026-10-24 08:39:22.267] sending output
+[2026-10-24 08:39:22.267] sent output
+[2026-10-24 08:39:22.468] dequeued output
+[2026-10-24 08:39:22.468] sending output
+[2026-10-24 08:39:22.469] sent output
+[2026-10-24 08:39:22.561] received input
+[2026-10-24 08:39:22.561] queued input
+[2026-10-24 08:39:22.561] dequeued input
+[2026-10-24 08:39:22.561] pushing input into pty
+[2026-10-24 08:39:22.561] pushed input
+[2026-10-24 08:39:22.561] begin command_full process
+[2026-10-24 08:39:22.561] read output
+[2026-10-24 08:39:22.561] queuing output
+[2026-10-24 08:39:22.562] queued output
+[2026-10-24 08:39:22.670] dequeued output
+[2026-10-24 08:39:22.670] sending output
+[2026-10-24 08:39:22.671] sent output
+[2026-10-24 08:39:22.709] received input
+[2026-10-24 08:39:22.709] queued input
+[2026-10-24 08:39:22.709] dequeued input
+[2026-10-24 08:39:22.709] pushing input into pty
+[2026-10-24 08:39:22.709] pushed input
+[2026-10-24 08:39:22.710] begin command_full process
+[2026-10-24 08:39:22.710] read output
+[2026-10-24 08:39:22.710] queuing output
+[2026-10-24 08:39:22.710] queued output
+[2026-10-24 08:39:22.872] dequeued output
+[2026-10-24 08:39:22.873] sending output
+[2026-10-24 08:39:22.873] sent output
+[2026-10-24 08:39:23.074] dequeued output
+[2026-10-24 08:39:23.074] sending output
+[2026-10-24 08:39:23.075] sent output
+[2026-10-24 08:39:23.223] received input
+[2026-10-24 08:39:23.223] queued input
+[2026-10-24 08:39:23.223] dequeued input
+[2026-10-24 08:39:23.223] pushing input into pty
+[2026-10-24 08:39:23.223] pushed input
+[2026-10-24 08:39:23.223] begin command_full process
+[2026-10-24 08:39:23.223] read output
+[2026-10-24 08:39:23.224] queuing output
+[2026-10-24 08:39:23.224] queued output
+[2026-10-24 08:39:23.255] received input
+[2026-10-24 08:39:23.255] queued input
+[2026-10-24 08:39:23.255] dequeued input
+[2026-10-24 08:39:23.255] pushing input into pty
+[2026-10-24 08:39:23.255] pushed input
+[2026-10-24 08:39:23.255] begin command_full process
+[2026-10-24 08:39:23.255] read output
+[2026-10-24 08:39:23.255] queuing output
+[2026-10-24 08:39:23.255] queued output
+[2026-10-24 08:39:23.276] dequeued output
+[2026-10-24 08:39:23.277] sending output
+[2026-10-24 08:39:23.277] sent output
+[2026-10-24 08:39:23.477] dequeued output
+[2026-10-24 08:39:23.478] sending output
+[2026-10-24 08:39:23.478] sent output
+[2026-10-24 08:39:23.679] dequeued output
+[2026-10-24 08:39:23.679] sending output
+[2026-10-24 08:39:23.679] sent output
+[2026-10-24 08:39:23.881] dequeued output
+[2026-10-24 08:39:23.881] sending output
+[2026-10-24 08:39:23.882] sent output
+[2026-10-24 08:39:24.599] received input
+[2026-10-24 08:39:24.599] queued input
+[2026-10-24 08:39:24.600] dequeued input
+[2026-10-24 08:39:24.600] pushing input into pty
+[2026-10-24 08:39:24.600] pushed input
+[2026-10-24 08:39:24.600] begin command_full process
+[2026-10-24 08:39:24.600] read output
+[2026-10-24 08:39:24.600] queuing output
+[2026-10-24 08:39:24.600] queued output
+[2026-10-24 08:39:24.601] dequeued output
+[2026-10-24 08:39:24.601] sending output
+[2026-10-24 08:39:24.601] sent output
+[2026-10-24 08:39:25.124] received input
+[2026-10-24 08:39:25.124] queued input
+[2026-10-24 08:39:25.124] dequeued input
+[2026-10-24 08:39:25.125] pushing input into pty
+[2026-10-24 08:39:25.125] pushed input
+[2026-10-24 08:39:25.125] begin command_full process
+[2026-10-24 08:39:25.125] read output
+[2026-10-24 08:39:25.125] queuing output
+[2026-10-24 08:39:25.125] queued output
+[2026-10-24 08:39:25.126] dequeued output
+[2026-10-24 08:39:25.126] sending output
+[2026-10-24 08:39:25.126] sent output
+[2026-10-24 08:39:25.297] received input
+[2026-10-24 08:39:25.297] queued input
+[2026-10-24 08:39:25.297] dequeued input
+[2026-10-24 08:39:25.297] pushing input into pty
+[2026-10-24 08:39:25.297] pushed input
+[2026-10-24 08:39:25.297] begin command_full process
+[2026-10-24 08:39:25.298] read output
+[2026-10-24 08:39:25.298] queuing output
+[2026-10-24 08:39:25.298] queued output
+[2026-10-24 08:39:25.327] dequeued output
+[2026-10-24 08:39:25.327] sending output
+[2026-10-24 08:39:25.327] sent output
+[2026-10-24 08:39:25.490] received input
+[2026-10-24 08:39:25.490] queued input
+[2026-10-24 08:39:25.491] dequeued input
+[2026-10-24 08:39:25.491] pushing input into pty
+[2026-10-24 08:39:25.491] pushed input
+[2026-10-24 08:39:25.491] begin command_full process
+[2026-10-24 08:39:25.491] read output
+[2026-10-24 08:39:25.491] queuing output
+[2026-10-24 08:39:25.491] queued output
+[2026-10-24 08:39:25.529] dequeued output
+[2026-10-24 08:39:25.529] sending output
+[2026-10-24 08:39:25.529] sent output
+[2026-10-24 08:39:25.937] received input
+[2026-10-24 08:39:25.937] queued input
+[2026-10-24 08:39:25.937] dequeued input
+[2026-10-24 08:39:25.937] pushing input into pty
+[2026-10-24 08:39:25.937] pushed input
+[2026-10-24 08:39:25.937] begin command_full process
+[2026-10-24 08:39:25.937] read output
+[2026-10-24 08:39:25.938] queuing output
+[2026-10-24 08:39:25.938] queued output
+[2026-10-24 08:39:25.938] dequeued output
+[2026-10-24 08:39:25.938] sending output
+[2026-10-24 08:39:25.938] sent output
+[2026-10-24 08:39:26.574] received input
+[2026-10-24 08:39:26.574] queued input
+[2026-10-24 08:39:26.574] dequeued input
+[2026-10-24 08:39:26.574] pushing input into pty
+[2026-10-24 08:39:26.574] pushed input
+[2026-10-24 08:39:26.574] begin command_full process
+[2026-10-24 08:39:26.575] read output
+[2026-10-24 08:39:26.575] queuing output
+[2026-10-24 08:39:26.575] queued output
+[2026-10-24 08:39:26.575] dequeued output
+[2026-10-24 08:39:26.575] sending output
+[2026-10-24 08:39:26.575] sent output
+[2026-10-24 08:39:27.416] received input
+[2026-10-24 08:39:27.416] queued input
+[2026-10-24 08:39:27.416] dequeued input
+[2026-10-24 08:39:27.416] pushing input into pty
+[2026-10-24 08:39:27.416] pushed input
+[2026-10-24 08:39:27.416] begin command_full process
+[2026-10-24 08:39:27.416] read output
+[2026-10-24 08:39:27.417] queuing output
+[2026-10-24 08:39:27.417] queued output
+[2026-10-24 08:39:27.417] dequeued output
+[2026-10-24 08:39:27.417] sending output
+[2026-10-24 08:39:27.418] sent output
+[2026-10-24 08:39:27.918] received input
+[2026-10-24 08:39:27.918] queued input
+[2026-10-24 08:39:27.918] dequeued input
+[2026-10-24 08:39:27.918] pushing input into pty
+[2026-10-24 08:39:27.918] pushed input
+[2026-10-24 08:39:27.918] begin command_full process
+[2026-10-24 08:39:27.919] read output
+[2026-10-24 08:39:27.919] queuing output
+[2026-10-24 08:39:27.919] queued output
+[2026-10-24 08:39:27.919] dequeued output
+[2026-10-24 08:39:27.919] sending output
+[2026-10-24 08:39:27.920] sent output
+[2026-10-24 08:39:27.948] received input
+[2026-10-24 08:39:27.948] queued input
+[2026-10-24 08:39:27.948] dequeued input
+[2026-10-24 08:39:27.948] pushing input into pty
+[2026-10-24 08:39:27.948] pushed input
+[2026-10-24 08:39:27.948] begin command_full process
+[2026-10-24 08:39:27.948] read output
+[2026-10-24 08:39:27.949] queuing output
+[2026-10-24 08:39:27.949] queued output
+[2026-10-24 08:39:27.993] received input
+[2026-10-24 08:39:27.994] queued input
+[2026-10-24 08:39:27.994] dequeued input
+[2026-10-24 08:39:27.994] pushing input into pty
+[2026-10-24 08:39:27.994] pushed input
+[2026-10-24 08:39:27.994] begin command_full process
+[2026-10-24 08:39:27.994] read output
+[2026-10-24 08:39:27.994] queuing output
+[2026-10-24 08:39:27.995] queued output
+[2026-10-24 08:39:28.024] received input
+[2026-10-24 08:39:28.024] queued input
+[2026-10-24 08:39:28.024] dequeued input
+[2026-10-24 08:39:28.024] pushing input into pty
+[2026-10-24 08:39:28.024] pushed input
+[2026-10-24 08:39:28.024] begin command_full process
+[2026-10-24 08:39:28.025] read output
+[2026-10-24 08:39:28.025] queuing output
+[2026-10-24 08:39:28.025] queued output
+[2026-10-24 08:39:28.056] received input
+[2026-10-24 08:39:28.056] queued input
+[2026-10-24 08:39:28.056] dequeued input
+[2026-10-24 08:39:28.056] pushing input into pty
+[2026-10-24 08:39:28.056] pushed input
+[2026-10-24 08:39:28.056] begin command_full process
+[2026-10-24 08:39:28.057] read output
+[2026-10-24 08:39:28.057] queuing output
+[2026-10-24 08:39:28.057] queued output
+[2026-10-24 08:39:28.087] received input
+[2026-10-24 08:39:28.087] queued input
+[2026-10-24 08:39:28.087] dequeued input
+[2026-10-24 08:39:28.087] pushing input into pty
+[2026-10-24 08:39:28.087] pushed input
+[2026-10-24 08:39:28.087] begin command_full process
+[2026-10-24 08:39:28.088] read output
+[2026-10-24 08:39:28.088] queuing output
+[2026-10-24 08:39:28.088] queued output
+[2026-10-24 08:39:28.118] received input
+[2026-10-24 08:39:28.118] queued input
+[2026-10-24 08:39:28.118] dequeued input
+[2026-10-24 08:39:28.118] pushing input into pty
+[2026-10-24 08:39:28.118] pushed input
+[2026-10-24 08:39:28.118] begin command_full process
+[2026-10-24 08:39:28.119] read output
+[2026-10-24 08:39:28.119] queuing output
+[2026-10-24 08:39:28.119] queued output
+[2026-10-24 08:39:28.121] dequeued output
+[2026-10-24 08:39:28.121] sending output
+[2026-10-24 08:39:28.121] sent output
+[2026-10-24 08:39:28.150] received input
+[2026-10-24 08:39:28.150] queued input
+[2026-10-24 08:39:28.150] dequeued input
+[2026-10-24 08:39:28.150] pushing input into pty
+[2026-10-24 08:39:28.150] pushed input
+[2026-10-24 08:39:28.150] begin command_full process
+[2026-10-24 08:39:28.150] read output
+[2026-10-24 08:39:28.150] queuing output
+[2026-10-24 08:39:28.151] queued output
+[2026-10-24 08:39:28.190] received input
+[2026-10-24 08:39:28.190] queued input
+[2026-10-24 08:39:28.191] dequeued input
+[2026-10-24 08:39:28.191] pushing input into pty
+[2026-10-24 08:39:28.191] pushed input
+[2026-10-24 08:39:28.191] begin command_full process
+[2026-10-24 08:39:28.191] read output
+[2026-10-24 08:39:28.191] queuing output
+[2026-10-24 08:39:28.191] queued output
+[2026-10-24 08:39:28.322] dequeued output
+[2026-10-24 08:39:28.322] sending output
+[2026-10-24 08:39:28.322] sent output
+[2026-10-24 08:39:28.524] dequeued output
+[2026-10-24 08:39:28.524] sending output
+[2026-10-24 08:39:28.525] sent output
+[2026-10-24 08:39:28.726] dequeued output
+[2026-10-24 08:39:28.726] sending output
+[2026-10-24 08:39:28.727] sent output
+[2026-10-24 08:39:28.928] dequeued output
+[2026-10-24 08:39:28.928] sending output
+[2026-10-24 08:39:28.928] sent output
+[2026-10-24 08:39:29.130] dequeued output
+[2026-10-24 08:39:29.130] sending output
+[2026-10-24 08:39:29.131] sent output
+[2026-10-24 08:39:29.333] dequeued output
+[2026-10-24 08:39:29.333] sending output
+[2026-10-24 08:39:29.333] sent output
+[2026-10-24 08:39:29.534] dequeued output
+[2026-10-24 08:39:29.535] sending output
+[2026-10-24 08:39:29.535] sent output
+[2026-10-24 08:39:46.146] Server started
+[2026-10-24 08:39:51.904] 127.0.0.1 | GET /remote | incoming
+[2026-10-24 08:39:51.905] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-24 08:39:51.967] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-24 08:39:51.968] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-24 08:39:51.971] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-24 08:39:51.971] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-24 08:39:51.974] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-24 08:39:51.974] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-24 08:39:51.977] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-24 08:39:51.977] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-24 08:39:52.038] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-24 08:39:52.038] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-24 08:39:52.072] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-24 08:39:52.072] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-24 08:39:52.074] Terminal 0: Ready
+[2026-10-24 08:39:52.075] WS 0: Open
+[2026-10-24 08:39:52.090] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-24 08:39:52.090] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-24 08:39:52.092] Terminal 1: Ready
+[2026-10-24 08:39:52.092] WS 1: Open
+[2026-10-24 08:39:52.093] read output
+[2026-10-24 08:39:52.093] queuing output
+[2026-10-24 08:39:52.093] queued output
+[2026-10-24 08:39:52.093] dequeued output
+[2026-10-24 08:39:52.093] sending output
+[2026-10-24 08:39:52.094] sent output
+[2026-10-24 08:39:52.109] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-24 08:39:52.109] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-24 08:39:52.111] Terminal 2: Ready
+[2026-10-24 08:39:52.111] WS 2: Open
+[2026-10-24 08:39:52.116] read output
+[2026-10-24 08:39:52.119] queuing output
+[2026-10-24 08:39:52.119] queued output
+[2026-10-24 08:39:52.119] dequeued output
+[2026-10-24 08:39:52.119] sending output
+[2026-10-24 08:39:52.120] sent output
+[2026-10-24 08:39:52.135] 127.0.0.1 | GET /ws/3 | incoming
+[2026-10-24 08:39:52.135] 127.0.0.1 | GET /ws/3 | 101 Switching Protocols
+[2026-10-24 08:39:52.137] Terminal 3: Ready
+[2026-10-24 08:39:52.137] WS 3: Open
+[2026-10-24 08:39:52.138] read output
+[2026-10-24 08:39:52.139] queuing output
+[2026-10-24 08:39:52.139] queued output
+[2026-10-24 08:39:52.139] dequeued output
+[2026-10-24 08:39:52.139] sending output
+[2026-10-24 08:39:52.139] sent output
+[2026-10-24 08:39:52.175] read output
+[2026-10-24 08:39:52.175] queuing output
+[2026-10-24 08:39:52.175] queued output
+[2026-10-24 08:39:52.175] dequeued output
+[2026-10-24 08:39:52.175] sending output
+[2026-10-24 08:39:52.175] sent output
+[2026-10-24 08:40:13.799] received input
+[2026-10-24 08:40:13.799] queued input
+[2026-10-24 08:40:13.799] dequeued input
+[2026-10-24 08:40:13.799] pushing input into pty
+[2026-10-24 08:40:13.799] pushed input
+[2026-10-24 08:40:13.799] begin command_full process
+[2026-10-24 08:40:13.799] read output
+[2026-10-24 08:40:13.800] queuing output
+[2026-10-24 08:40:13.800] queued output
+[2026-10-24 08:40:13.800] dequeued output
+[2026-10-24 08:40:13.800] sending output
+[2026-10-24 08:40:13.800] sent output
+[2026-10-24 08:40:17.556] received input
+[2026-10-24 08:40:17.556] received input
+[2026-10-24 08:40:17.557] received input
+[2026-10-24 08:40:17.557] received input
+[2026-10-24 08:40:43.471] received input
+[2026-10-24 08:40:43.472] received input
+[2026-10-24 08:40:43.472] received input
+[2026-10-24 08:40:43.474] received input
+[2026-10-24 08:41:11.904] received input
+[2026-10-24 08:41:11.904] received input
+[2026-10-24 08:41:11.905] received input
+[2026-10-24 08:41:11.905] received input
+[2026-10-24 08:41:33.830] received input
+[2026-10-24 08:41:33.831] queued input
+[2026-10-24 08:41:33.831] dequeued input
+[2026-10-24 08:41:33.831] pushing input into pty
+[2026-10-24 08:41:33.831] pushed input
+[2026-10-24 08:41:33.831] begin command_full process
+[2026-10-24 08:41:33.831] read output
+[2026-10-24 08:41:33.832] queuing output
+[2026-10-24 08:41:33.832] queued output
+[2026-10-24 08:41:33.832] dequeued output
+[2026-10-24 08:41:33.832] sending output
+[2026-10-24 08:41:33.832] sent output
+[2026-10-24 08:41:33.989] received input
+[2026-10-24 08:41:33.990] queued input
+[2026-10-24 08:41:33.990] dequeued input
+[2026-10-24 08:41:33.990] pushing input into pty
+[2026-10-24 08:41:33.990] pushed input
+[2026-10-24 08:41:33.990] begin command_full process
+[2026-10-24 08:41:33.990] read output
+[2026-10-24 08:41:33.990] queuing output
+[2026-10-24 08:41:33.990] queued output
+[2026-10-24 08:41:34.033] dequeued output
+[2026-10-24 08:41:34.034] sending output
+[2026-10-24 08:41:34.034] sent output
+[2026-10-24 08:41:34.122] received input
+[2026-10-24 08:41:34.122] queued input
+[2026-10-24 08:41:34.122] dequeued input
+[2026-10-24 08:41:34.123] pushing input into pty
+[2026-10-24 08:41:34.123] pushed input
+[2026-10-24 08:41:34.123] begin command_full process
+[2026-10-24 08:41:34.123] read output
+[2026-10-24 08:41:34.123] queuing output
+[2026-10-24 08:41:34.123] queued output
+[2026-10-24 08:41:34.236] dequeued output
+[2026-10-24 08:41:34.236] sending output
+[2026-10-24 08:41:34.236] sent output
+[2026-10-24 08:41:37.709] received input
+[2026-10-24 08:41:37.710] received input
+[2026-10-24 08:41:37.710] received input
+[2026-10-24 08:41:37.710] received input
+[2026-10-24 08:41:43.770] Server started
+[2026-10-24 08:41:45.918] 127.0.0.1 | GET /remote | incoming
+[2026-10-24 08:41:45.918] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-24 08:41:45.995] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-24 08:41:45.995] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-24 08:41:46.001] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-24 08:41:46.001] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-24 08:41:46.007] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-24 08:41:46.007] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-24 08:41:46.015] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-24 08:41:46.015] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-24 08:41:46.079] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-24 08:41:46.080] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-24 08:41:46.126] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-24 08:41:46.126] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-24 08:41:46.128] Terminal 0: Ready
+[2026-10-24 08:41:46.128] WS 0: Open
+[2026-10-24 08:41:46.144] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-24 08:41:46.144] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-24 08:41:46.145] Terminal 1: Ready
+[2026-10-24 08:41:46.146] WS 1: Open
+[2026-10-24 08:41:46.151] read output
+[2026-10-24 08:41:46.151] queuing output
+[2026-10-24 08:41:46.152] queued output
+[2026-10-24 08:41:46.152] dequeued output
+[2026-10-24 08:41:46.152] sending output
+[2026-10-24 08:41:46.152] sent output
+[2026-10-24 08:41:46.164] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-24 08:41:46.164] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-24 08:41:46.168] read output
+[2026-10-24 08:41:46.169] Terminal 2: Ready
+[2026-10-24 08:41:46.169] WS 2: Open
+[2026-10-24 08:41:46.174] queuing output
+[2026-10-24 08:41:46.174] queued output
+[2026-10-24 08:41:46.175] dequeued output
+[2026-10-24 08:41:46.177] sending output
+[2026-10-24 08:41:46.177] sent output
+[2026-10-24 08:41:46.184] 127.0.0.1 | GET /ws/3 | incoming
+[2026-10-24 08:41:46.184] 127.0.0.1 | GET /ws/3 | 101 Switching Protocols
+[2026-10-24 08:41:46.192] Terminal 3: Ready
+[2026-10-24 08:41:46.193] WS 3: Open
+[2026-10-24 08:41:46.200] read output
+[2026-10-24 08:41:46.200] queuing output
+[2026-10-24 08:41:46.200] queued output
+[2026-10-24 08:41:46.200] dequeued output
+[2026-10-24 08:41:46.200] sending output
+[2026-10-24 08:41:46.200] sent output
+[2026-10-24 08:41:46.217] read output
+[2026-10-24 08:41:46.217] queuing output
+[2026-10-24 08:41:46.217] queued output
+[2026-10-24 08:41:46.217] dequeued output
+[2026-10-24 08:41:46.217] sending output
+[2026-10-24 08:41:46.217] sent output
+[2026-10-24 08:41:48.878] received input
+[2026-10-24 08:41:48.878] queued input
+[2026-10-24 08:41:48.878] dequeued input
+[2026-10-24 08:41:48.878] pushing input into pty
+[2026-10-24 08:41:48.878] pushed input
+[2026-10-24 08:41:48.878] begin command_full process
+[2026-10-24 08:41:48.879] read output
+[2026-10-24 08:41:48.879] queuing output
+[2026-10-24 08:41:48.879] queued output
+[2026-10-24 08:41:48.879] dequeued output
+[2026-10-24 08:41:48.879] sending output
+[2026-10-24 08:41:48.879] sent output
+[2026-10-24 08:41:48.969] received input
+[2026-10-24 08:41:48.969] queued input
+[2026-10-24 08:41:48.969] dequeued input
+[2026-10-24 08:41:48.969] pushing input into pty
+[2026-10-24 08:41:48.969] pushed input
+[2026-10-24 08:41:48.969] begin command_full process
+[2026-10-24 08:41:48.970] read output
+[2026-10-24 08:41:48.970] queuing output
+[2026-10-24 08:41:48.970] queued output
+[2026-10-24 08:41:49.082] dequeued output
+[2026-10-24 08:41:49.082] sending output
+[2026-10-24 08:41:49.082] sent output
+[2026-10-24 08:42:21.927] Server started
+[2026-10-24 08:42:23.740] 127.0.0.1 | GET /remote | incoming
+[2026-10-24 08:42:23.740] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-24 08:42:23.815] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-24 08:42:23.815] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-24 08:42:23.820] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-24 08:42:23.820] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-24 08:42:23.820] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-24 08:42:23.821] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-24 08:42:23.825] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-24 08:42:23.825] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-24 08:42:23.888] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-24 08:42:23.888] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-24 08:42:23.928] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-24 08:42:23.928] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-24 08:42:23.929] Terminal 0: Ready
+[2026-10-24 08:42:23.930] WS 0: Open
+[2026-10-24 08:42:23.945] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-24 08:42:23.945] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-24 08:42:23.947] Terminal 1: Ready
+[2026-10-24 08:42:23.947] WS 1: Open
+[2026-10-24 08:42:23.950] read output
+[2026-10-24 08:42:23.950] queuing output
+[2026-10-24 08:42:23.951] queued output
+[2026-10-24 08:42:23.951] dequeued output
+[2026-10-24 08:42:23.951] sending output
+[2026-10-24 08:42:23.951] sent output
+[2026-10-24 08:42:23.964] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-24 08:42:23.964] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-24 08:42:23.966] Terminal 2: Ready
+[2026-10-24 08:42:23.967] WS 2: Open
+[2026-10-24 08:42:23.970] read output
+[2026-10-24 08:42:23.970] queuing output
+[2026-10-24 08:42:23.971] queued output
+[2026-10-24 08:42:23.971] dequeued output
+[2026-10-24 08:42:23.971] sending output
+[2026-10-24 08:42:23.971] sent output
+[2026-10-24 08:42:23.992] read output
+[2026-10-24 08:42:23.992] queuing output
+[2026-10-24 08:42:23.992] queued output
+[2026-10-24 08:42:23.992] dequeued output
+[2026-10-24 08:42:23.992] sending output
+[2026-10-24 08:42:23.992] sent output
+[2026-10-24 08:42:23.994] 127.0.0.1 | GET /ws/3 | incoming
+[2026-10-24 08:42:23.994] 127.0.0.1 | GET /ws/3 | 101 Switching Protocols
+[2026-10-24 08:42:23.997] Terminal 3: Ready
+[2026-10-24 08:42:23.998] WS 3: Open
+[2026-10-24 08:42:24.016] read output
+[2026-10-24 08:42:24.016] queuing output
+[2026-10-24 08:42:24.016] queued output
+[2026-10-24 08:42:24.016] dequeued output
+[2026-10-24 08:42:24.016] sending output
+[2026-10-24 08:42:24.016] sent output
+[2026-10-24 08:42:30.917] received input
+[2026-10-24 08:42:30.917] queued input
+[2026-10-24 08:42:30.917] dequeued input
+[2026-10-24 08:42:30.917] pushing input into pty
+[2026-10-24 08:42:30.918] pushed input
+[2026-10-24 08:42:30.918] begin command_full process
+[2026-10-24 08:42:30.918] read output
+[2026-10-24 08:42:30.919] queuing output
+[2026-10-24 08:42:30.919] queued output
+[2026-10-24 08:42:30.919] dequeued output
+[2026-10-24 08:42:30.919] sending output
+[2026-10-24 08:42:30.919] sent output
+[2026-10-24 08:42:30.939] end command_full process
+[2026-10-24 08:42:31.017] received input
+[2026-10-24 08:42:31.017] queued input
+[2026-10-24 08:42:31.017] dequeued input
+[2026-10-24 08:42:31.017] pushing input into pty
+[2026-10-24 08:42:31.017] pushed input
+[2026-10-24 08:42:31.017] begin command_full process
+[2026-10-24 08:42:31.017] read output
+[2026-10-24 08:42:31.017] queuing output
+[2026-10-24 08:42:31.018] queued output
+[2026-10-24 08:42:31.039] end command_full process
+[2026-10-24 08:42:31.121] dequeued output
+[2026-10-24 08:42:31.122] sending output
+[2026-10-24 08:42:31.122] sent output
+[2026-10-24 08:44:54.103] Server started
+[2026-10-24 08:44:56.127] 127.0.0.1 | GET /remote | incoming
+[2026-10-24 08:44:56.127] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-24 08:44:56.198] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-24 08:44:56.198] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-24 08:44:56.202] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-24 08:44:56.202] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-24 08:44:56.202] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-24 08:44:56.202] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-24 08:44:56.206] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-24 08:44:56.206] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-24 08:44:56.268] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-24 08:44:56.268] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-24 08:44:56.303] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-24 08:44:56.303] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-24 08:44:56.305] Terminal 0: Ready
+[2026-10-24 08:44:56.305] WS 0: Open
+[2026-10-24 08:44:56.319] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-24 08:44:56.319] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-24 08:44:56.321] Terminal 1: Ready
+[2026-10-24 08:44:56.321] WS 1: Open
+[2026-10-24 08:44:56.323] read output
+[2026-10-24 08:44:56.323] queuing output
+[2026-10-24 08:44:56.324] queued output
+[2026-10-24 08:44:56.324] dequeued output
+[2026-10-24 08:44:56.324] sending output
+[2026-10-24 08:44:56.325] sent output
+[2026-10-24 08:44:56.338] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-24 08:44:56.338] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-24 08:44:56.342] Terminal 2: Ready
+[2026-10-24 08:44:56.342] WS 2: Open
+[2026-10-24 08:44:56.346] read output
+[2026-10-24 08:44:56.346] queuing output
+[2026-10-24 08:44:56.346] queued output
+[2026-10-24 08:44:56.346] dequeued output
+[2026-10-24 08:44:56.347] sending output
+[2026-10-24 08:44:56.347] sent output
+[2026-10-24 08:44:56.358] 127.0.0.1 | GET /ws/3 | incoming
+[2026-10-24 08:44:56.358] 127.0.0.1 | GET /ws/3 | 101 Switching Protocols
+[2026-10-24 08:44:56.361] Terminal 3: Ready
+[2026-10-24 08:44:56.361] WS 3: Open
+[2026-10-24 08:44:56.366] read output
+[2026-10-24 08:44:56.367] queuing output
+[2026-10-24 08:44:56.367] queued output
+[2026-10-24 08:44:56.369] dequeued output
+[2026-10-24 08:44:56.369] sending output
+[2026-10-24 08:44:56.370] sent output
+[2026-10-24 08:44:56.374] read output
+[2026-10-24 08:44:56.374] queuing output
+[2026-10-24 08:44:56.374] queued output
+[2026-10-24 08:44:56.374] dequeued output
+[2026-10-24 08:44:56.374] sending output
+[2026-10-24 08:44:56.374] sent output
+[2026-10-24 08:44:56.384] read output
+[2026-10-24 08:44:56.384] queuing output
+[2026-10-24 08:44:56.384] queued output
+[2026-10-24 08:44:56.384] dequeued output
+[2026-10-24 08:44:56.384] sending output
+[2026-10-24 08:44:56.384] sent output
+[2026-10-24 08:44:57.698] received input
+[2026-10-24 08:44:57.698] queued input
+[2026-10-24 08:44:57.698] dequeued input
+[2026-10-24 08:44:57.698] pushing input into pty
+[2026-10-24 08:44:57.698] pushed input
+[2026-10-24 08:44:57.698] begin command_full process
+[2026-10-24 08:44:57.698] End of command_full process
+[2026-10-24 08:44:57.698] read output
+[2026-10-24 08:44:57.699] queuing output
+[2026-10-24 08:44:57.699] queued output
+[2026-10-24 08:44:57.699] dequeued output
+[2026-10-24 08:44:57.699] sending output
+[2026-10-24 08:44:57.699] sent output
+[2026-10-24 08:44:57.770] received input
+[2026-10-24 08:44:57.770] queued input
+[2026-10-24 08:44:57.770] dequeued input
+[2026-10-24 08:44:57.770] pushing input into pty
+[2026-10-24 08:44:57.770] pushed input
+[2026-10-24 08:44:57.770] begin command_full process
+[2026-10-24 08:44:57.770] End of command_full process
+[2026-10-24 08:44:57.770] read output
+[2026-10-24 08:44:57.771] queuing output
+[2026-10-24 08:44:57.771] queued output
+[2026-10-24 08:44:57.771] dequeued output
+[2026-10-24 08:44:57.771] sending output
+[2026-10-24 08:44:57.771] sent output
+[2026-10-24 08:44:57.966] received input
+[2026-10-24 08:44:57.966] queued input
+[2026-10-24 08:44:57.966] dequeued input
+[2026-10-24 08:44:57.966] pushing input into pty
+[2026-10-24 08:44:57.966] pushed input
+[2026-10-24 08:44:57.966] begin command_full process
+[2026-10-24 08:44:57.966] End of command_full process
+[2026-10-24 08:44:57.967] read output
+[2026-10-24 08:44:57.967] queuing output
+[2026-10-24 08:44:57.967] queued output
+[2026-10-24 08:44:57.967] dequeued output
+[2026-10-24 08:44:57.967] sending output
+[2026-10-24 08:44:57.967] sent output
+[2026-10-24 08:44:58.015] received input
+[2026-10-24 08:44:58.016] queued input
+[2026-10-24 08:44:58.016] dequeued input
+[2026-10-24 08:44:58.016] pushing input into pty
+[2026-10-24 08:44:58.016] pushed input
+[2026-10-24 08:44:58.016] begin command_full process
+[2026-10-24 08:44:58.016] End of command_full process
+[2026-10-24 08:44:58.017] read output
+[2026-10-24 08:44:58.017] queuing output
+[2026-10-24 08:44:58.017] queued output
+[2026-10-24 08:44:58.017] dequeued output
+[2026-10-24 08:44:58.017] sending output
+[2026-10-24 08:44:58.018] sent output
+[2026-10-24 08:44:58.160] received input
+[2026-10-24 08:44:58.160] queued input
+[2026-10-24 08:44:58.160] dequeued input
+[2026-10-24 08:44:58.161] pushing input into pty
+[2026-10-24 08:44:58.161] pushed input
+[2026-10-24 08:44:58.161] begin command_full process
+[2026-10-24 08:44:58.161] End of command_full process
+[2026-10-24 08:44:58.161] read output
+[2026-10-24 08:44:58.161] queuing output
+[2026-10-24 08:44:58.162] queued output
+[2026-10-24 08:44:58.162] dequeued output
+[2026-10-24 08:44:58.162] sending output
+[2026-10-24 08:44:58.162] sent output
+[2026-10-24 08:44:58.245] received input
+[2026-10-24 08:44:58.245] queued input
+[2026-10-24 08:44:58.245] dequeued input
+[2026-10-24 08:44:58.246] pushing input into pty
+[2026-10-24 08:44:58.246] pushed input
+[2026-10-24 08:44:58.246] begin command_full process
+[2026-10-24 08:44:58.246] End of command_full process
+[2026-10-24 08:44:58.246] read output
+[2026-10-24 08:44:58.247] queuing output
+[2026-10-24 08:44:58.247] queued output
+[2026-10-24 08:44:58.247] dequeued output
+[2026-10-24 08:44:58.247] sending output
+[2026-10-24 08:44:58.248] sent output
+[2026-10-24 08:44:58.590] received input
+[2026-10-24 08:44:58.591] queued input
+[2026-10-24 08:44:58.591] dequeued input
+[2026-10-24 08:44:58.591] pushing input into pty
+[2026-10-24 08:44:58.591] pushed input
+[2026-10-24 08:44:58.591] begin command_full process
+[2026-10-24 08:44:58.591] End of command_full process
+[2026-10-24 08:44:58.591] read output
+[2026-10-24 08:44:58.591] queuing output
+[2026-10-24 08:44:58.591] queued output
+[2026-10-24 08:44:58.591] dequeued output
+[2026-10-24 08:44:58.591] sending output
+[2026-10-24 08:44:58.591] sent output
+[2026-10-24 08:44:59.105] received input
+[2026-10-24 08:44:59.105] queued input
+[2026-10-24 08:44:59.105] dequeued input
+[2026-10-24 08:44:59.105] pushing input into pty
+[2026-10-24 08:44:59.105] pushed input
+[2026-10-24 08:44:59.105] begin command_full process
+[2026-10-24 08:44:59.105] End of command_full process
+[2026-10-24 08:44:59.106] read output
+[2026-10-24 08:44:59.106] queuing output
+[2026-10-24 08:44:59.106] queued output
+[2026-10-24 08:44:59.106] dequeued output
+[2026-10-24 08:44:59.107] sending output
+[2026-10-24 08:44:59.107] sent output
+[2026-10-24 08:44:59.133] received input
+[2026-10-24 08:44:59.133] queued input
+[2026-10-24 08:44:59.133] dequeued input
+[2026-10-24 08:44:59.134] pushing input into pty
+[2026-10-24 08:44:59.134] pushed input
+[2026-10-24 08:44:59.134] begin command_full process
+[2026-10-24 08:44:59.134] End of command_full process
+[2026-10-24 08:44:59.134] read output
+[2026-10-24 08:44:59.134] queuing output
+[2026-10-24 08:44:59.134] queued output
+[2026-10-24 08:44:59.134] dequeued output
+[2026-10-24 08:44:59.134] sending output
+[2026-10-24 08:44:59.134] sent output
+[2026-10-24 08:44:59.997] received input
+[2026-10-24 08:44:59.998] queued input
+[2026-10-24 08:44:59.998] dequeued input
+[2026-10-24 08:44:59.998] pushing input into pty
+[2026-10-24 08:44:59.998] pushed input
+[2026-10-24 08:44:59.998] begin command_full process
+[2026-10-24 08:44:59.998] End of command_full process
+[2026-10-24 08:44:59.998] read output
+[2026-10-24 08:44:59.998] queuing output
+[2026-10-24 08:44:59.998] queued output
+[2026-10-24 08:44:59.998] dequeued output
+[2026-10-24 08:44:59.999] sending output
+[2026-10-24 08:44:59.999] sent output
+[2026-10-24 08:45:00.503] received input
+[2026-10-24 08:45:00.503] queued input
+[2026-10-24 08:45:00.503] dequeued input
+[2026-10-24 08:45:00.503] pushing input into pty
+[2026-10-24 08:45:00.503] pushed input
+[2026-10-24 08:45:00.503] begin command_full process
+[2026-10-24 08:45:00.503] End of command_full process
+[2026-10-24 08:45:00.504] read output
+[2026-10-24 08:45:00.504] queuing output
+[2026-10-24 08:45:00.504] queued output
+[2026-10-24 08:45:00.504] dequeued output
+[2026-10-24 08:45:00.504] sending output
+[2026-10-24 08:45:00.504] sent output
+[2026-10-24 08:45:00.533] received input
+[2026-10-24 08:45:00.534] queued input
+[2026-10-24 08:45:00.534] dequeued input
+[2026-10-24 08:45:00.534] pushing input into pty
+[2026-10-24 08:45:00.534] pushed input
+[2026-10-24 08:45:00.534] begin command_full process
+[2026-10-24 08:45:00.534] End of command_full process
+[2026-10-24 08:45:00.534] read output
+[2026-10-24 08:45:00.534] queuing output
+[2026-10-24 08:45:00.534] queued output
+[2026-10-24 08:45:00.534] dequeued output
+[2026-10-24 08:45:00.534] sending output
+[2026-10-24 08:45:00.535] sent output
+[2026-10-24 08:45:00.564] received input
+[2026-10-24 08:45:00.565] queued input
+[2026-10-24 08:45:00.565] dequeued input
+[2026-10-24 08:45:00.565] pushing input into pty
+[2026-10-24 08:45:00.565] pushed input
+[2026-10-24 08:45:00.565] begin command_full process
+[2026-10-24 08:45:00.565] End of command_full process
+[2026-10-24 08:45:00.565] read output
+[2026-10-24 08:45:00.565] queuing output
+[2026-10-24 08:45:00.565] queued output
+[2026-10-24 08:45:00.565] dequeued output
+[2026-10-24 08:45:00.565] sending output
+[2026-10-24 08:45:00.566] sent output
+[2026-10-24 08:45:00.611] received input
+[2026-10-24 08:45:00.611] queued input
+[2026-10-24 08:45:00.611] dequeued input
+[2026-10-24 08:45:00.611] pushing input into pty
+[2026-10-24 08:45:00.611] pushed input
+[2026-10-24 08:45:00.611] begin command_full process
+[2026-10-24 08:45:00.611] End of command_full process
+[2026-10-24 08:45:00.611] read output
+[2026-10-24 08:45:00.612] queuing output
+[2026-10-24 08:45:00.612] queued output
+[2026-10-24 08:45:00.612] dequeued output
+[2026-10-24 08:45:00.612] sending output
+[2026-10-24 08:45:00.612] sent output
+[2026-10-24 08:45:00.640] received input
+[2026-10-24 08:45:00.641] queued input
+[2026-10-24 08:45:00.641] dequeued input
+[2026-10-24 08:45:00.641] pushing input into pty
+[2026-10-24 08:45:00.641] pushed input
+[2026-10-24 08:45:00.641] begin command_full process
+[2026-10-24 08:45:00.641] End of command_full process
+[2026-10-24 08:45:00.641] read output
+[2026-10-24 08:45:00.641] queuing output
+[2026-10-24 08:45:00.641] queued output
+[2026-10-24 08:45:00.641] dequeued output
+[2026-10-24 08:45:00.641] sending output
+[2026-10-24 08:45:00.641] sent output
+[2026-10-24 08:45:00.670] received input
+[2026-10-24 08:45:00.671] queued input
+[2026-10-24 08:45:00.671] dequeued input
+[2026-10-24 08:45:00.671] pushing input into pty
+[2026-10-24 08:45:00.671] pushed input
+[2026-10-24 08:45:00.671] begin command_full process
+[2026-10-24 08:45:00.671] End of command_full process
+[2026-10-24 08:45:00.671] read output
+[2026-10-24 08:45:00.672] queuing output
+[2026-10-24 08:45:00.672] queued output
+[2026-10-24 08:45:00.672] dequeued output
+[2026-10-24 08:45:00.672] sending output
+[2026-10-24 08:45:00.672] sent output
+[2026-10-24 08:45:00.701] received input
+[2026-10-24 08:45:00.701] queued input
+[2026-10-24 08:45:00.701] dequeued input
+[2026-10-24 08:45:00.701] pushing input into pty
+[2026-10-24 08:45:00.701] pushed input
+[2026-10-24 08:45:00.701] begin command_full process
+[2026-10-24 08:45:00.701] End of command_full process
+[2026-10-24 08:45:00.701] read output
+[2026-10-24 08:45:00.701] queuing output
+[2026-10-24 08:45:00.702] queued output
+[2026-10-24 08:45:00.702] dequeued output
+[2026-10-24 08:45:00.702] sending output
+[2026-10-24 08:45:00.702] sent output
+[2026-10-24 08:45:00.733] received input
+[2026-10-24 08:45:00.733] queued input
+[2026-10-24 08:45:00.733] dequeued input
+[2026-10-24 08:45:00.733] pushing input into pty
+[2026-10-24 08:45:00.734] pushed input
+[2026-10-24 08:45:00.734] begin command_full process
+[2026-10-24 08:45:00.734] End of command_full process
+[2026-10-24 08:45:00.734] read output
+[2026-10-24 08:45:00.734] queuing output
+[2026-10-24 08:45:00.734] queued output
+[2026-10-24 08:45:00.734] dequeued output
+[2026-10-24 08:45:00.734] sending output
+[2026-10-24 08:45:00.735] sent output
+[2026-10-24 08:45:00.767] received input
+[2026-10-24 08:45:00.767] queued input
+[2026-10-24 08:45:00.767] dequeued input
+[2026-10-24 08:45:00.767] pushing input into pty
+[2026-10-24 08:45:00.767] pushed input
+[2026-10-24 08:45:00.767] begin command_full process
+[2026-10-24 08:45:00.767] End of command_full process
+[2026-10-24 08:45:00.768] read output
+[2026-10-24 08:45:00.768] queuing output
+[2026-10-24 08:45:00.768] queued output
+[2026-10-24 08:45:00.768] dequeued output
+[2026-10-24 08:45:00.768] sending output
+[2026-10-24 08:45:00.768] sent output
+[2026-10-24 08:45:00.808] received input
+[2026-10-24 08:45:00.809] queued input
+[2026-10-24 08:45:00.809] dequeued input
+[2026-10-24 08:45:00.809] pushing input into pty
+[2026-10-24 08:45:00.809] pushed input
+[2026-10-24 08:45:00.809] begin command_full process
+[2026-10-24 08:45:00.809] End of command_full process
+[2026-10-24 08:45:00.809] read output
+[2026-10-24 08:45:00.809] queuing output
+[2026-10-24 08:45:00.809] queued output
+[2026-10-24 08:45:00.809] dequeued output
+[2026-10-24 08:45:00.810] sending output
+[2026-10-24 08:45:00.810] sent output
+[2026-10-24 08:45:00.839] received input
+[2026-10-24 08:45:00.839] queued input
+[2026-10-24 08:45:00.839] dequeued input
+[2026-10-24 08:45:00.839] pushing input into pty
+[2026-10-24 08:45:00.839] pushed input
+[2026-10-24 08:45:00.839] begin command_full process
+[2026-10-24 08:45:00.839] End of command_full process
+[2026-10-24 08:45:00.839] read output
+[2026-10-24 08:45:00.840] queuing output
+[2026-10-24 08:45:00.840] queued output
+[2026-10-24 08:45:00.840] dequeued output
+[2026-10-24 08:45:00.840] sending output
+[2026-10-24 08:45:00.840] sent output
+[2026-10-24 08:45:00.869] received input
+[2026-10-24 08:45:00.869] queued input
+[2026-10-24 08:45:00.869] dequeued input
+[2026-10-24 08:45:00.869] pushing input into pty
+[2026-10-24 08:45:00.869] pushed input
+[2026-10-24 08:45:00.869] begin command_full process
+[2026-10-24 08:45:00.870] End of command_full process
+[2026-10-24 08:45:00.870] read output
+[2026-10-24 08:45:00.870] queuing output
+[2026-10-24 08:45:00.870] queued output
+[2026-10-24 08:45:00.870] dequeued output
+[2026-10-24 08:45:00.870] sending output
+[2026-10-24 08:45:00.870] sent output
+[2026-10-24 08:45:00.901] received input
+[2026-10-24 08:45:00.901] queued input
+[2026-10-24 08:45:00.901] dequeued input
+[2026-10-24 08:45:00.901] pushing input into pty
+[2026-10-24 08:45:00.901] pushed input
+[2026-10-24 08:45:00.901] begin command_full process
+[2026-10-24 08:45:00.901] End of command_full process
+[2026-10-24 08:45:00.901] read output
+[2026-10-24 08:45:00.901] queuing output
+[2026-10-24 08:45:00.902] queued output
+[2026-10-24 08:45:00.902] dequeued output
+[2026-10-24 08:45:00.902] sending output
+[2026-10-24 08:45:00.902] sent output
+[2026-10-24 08:45:00.935] received input
+[2026-10-24 08:45:00.935] queued input
+[2026-10-24 08:45:00.936] dequeued input
+[2026-10-24 08:45:00.936] pushing input into pty
+[2026-10-24 08:45:00.936] pushed input
+[2026-10-24 08:45:00.936] begin command_full process
+[2026-10-24 08:45:00.936] End of command_full process
+[2026-10-24 08:45:00.936] read output
+[2026-10-24 08:45:00.936] queuing output
+[2026-10-24 08:45:00.936] queued output
+[2026-10-24 08:45:00.936] dequeued output
+[2026-10-24 08:45:00.937] sending output
+[2026-10-24 08:45:00.937] sent output
+[2026-10-24 08:45:00.966] received input
+[2026-10-24 08:45:00.966] queued input
+[2026-10-24 08:45:00.967] dequeued input
+[2026-10-24 08:45:00.967] pushing input into pty
+[2026-10-24 08:45:00.967] pushed input
+[2026-10-24 08:45:00.967] begin command_full process
+[2026-10-24 08:45:00.967] End of command_full process
+[2026-10-24 08:45:00.967] read output
+[2026-10-24 08:45:00.967] queuing output
+[2026-10-24 08:45:00.968] queued output
+[2026-10-24 08:45:00.968] dequeued output
+[2026-10-24 08:45:00.968] sending output
+[2026-10-24 08:45:00.968] sent output
+[2026-10-24 08:45:00.999] received input
+[2026-10-24 08:45:00.999] queued input
+[2026-10-24 08:45:01.000] dequeued input
+[2026-10-24 08:45:01.000] pushing input into pty
+[2026-10-24 08:45:01.000] pushed input
+[2026-10-24 08:45:01.000] begin command_full process
+[2026-10-24 08:45:01.000] End of command_full process
+[2026-10-24 08:45:01.000] read output
+[2026-10-24 08:45:01.001] queuing output
+[2026-10-24 08:45:01.001] queued output
+[2026-10-24 08:45:01.001] dequeued output
+[2026-10-24 08:45:01.001] sending output
+[2026-10-24 08:45:01.002] sent output
+[2026-10-24 08:45:01.040] received input
+[2026-10-24 08:45:01.041] queued input
+[2026-10-24 08:45:01.041] dequeued input
+[2026-10-24 08:45:01.041] pushing input into pty
+[2026-10-24 08:45:01.041] pushed input
+[2026-10-24 08:45:01.041] begin command_full process
+[2026-10-24 08:45:01.041] End of command_full process
+[2026-10-24 08:45:01.041] read output
+[2026-10-24 08:45:01.042] queuing output
+[2026-10-24 08:45:01.042] queued output
+[2026-10-24 08:45:01.042] dequeued output
+[2026-10-24 08:45:01.043] sending output
+[2026-10-24 08:45:01.043] sent output
+[2026-10-24 08:45:01.387] received input
+[2026-10-24 08:45:01.387] queued input
+[2026-10-24 08:45:01.387] dequeued input
+[2026-10-24 08:45:01.387] pushing input into pty
+[2026-10-24 08:45:01.387] pushed input
+[2026-10-24 08:45:01.387] begin command_full process
+[2026-10-24 08:45:01.388] End of command_full process
+[2026-10-24 08:45:01.388] read output
+[2026-10-24 08:45:01.388] queuing output
+[2026-10-24 08:45:01.388] queued output
+[2026-10-24 08:45:01.388] dequeued output
+[2026-10-24 08:45:01.388] sending output
+[2026-10-24 08:45:01.389] sent output
+[2026-10-24 08:45:01.895] received input
+[2026-10-24 08:45:01.895] queued input
+[2026-10-24 08:45:01.895] dequeued input
+[2026-10-24 08:45:01.895] pushing input into pty
+[2026-10-24 08:45:01.895] pushed input
+[2026-10-24 08:45:01.895] begin command_full process
+[2026-10-24 08:45:01.895] End of command_full process
+[2026-10-24 08:45:01.895] read output
+[2026-10-24 08:45:01.895] queuing output
+[2026-10-24 08:45:01.895] queued output
+[2026-10-24 08:45:01.896] dequeued output
+[2026-10-24 08:45:01.896] sending output
+[2026-10-24 08:45:01.896] sent output
+[2026-10-24 08:45:01.925] received input
+[2026-10-24 08:45:01.925] queued input
+[2026-10-24 08:45:01.925] dequeued input
+[2026-10-24 08:45:01.925] pushing input into pty
+[2026-10-24 08:45:01.925] pushed input
+[2026-10-24 08:45:01.925] begin command_full process
+[2026-10-24 08:45:01.925] End of command_full process
+[2026-10-24 08:45:01.925] read output
+[2026-10-24 08:45:01.925] queuing output
+[2026-10-24 08:45:01.925] queued output
+[2026-10-24 08:45:01.925] dequeued output
+[2026-10-24 08:45:01.925] sending output
+[2026-10-24 08:45:01.926] sent output
+[2026-10-24 08:45:01.955] received input
+[2026-10-24 08:45:01.955] queued input
+[2026-10-24 08:45:01.955] dequeued input
+[2026-10-24 08:45:01.955] pushing input into pty
+[2026-10-24 08:45:01.956] pushed input
+[2026-10-24 08:45:01.956] begin command_full process
+[2026-10-24 08:45:01.956] End of command_full process
+[2026-10-24 08:45:01.956] read output
+[2026-10-24 08:45:01.956] queuing output
+[2026-10-24 08:45:01.956] queued output
+[2026-10-24 08:45:01.956] dequeued output
+[2026-10-24 08:45:01.956] sending output
+[2026-10-24 08:45:01.956] sent output
+[2026-10-24 08:45:01.988] received input
+[2026-10-24 08:45:01.988] queued input
+[2026-10-24 08:45:01.988] dequeued input
+[2026-10-24 08:45:01.988] pushing input into pty
+[2026-10-24 08:45:01.988] pushed input
+[2026-10-24 08:45:01.989] begin command_full process
+[2026-10-24 08:45:01.989] End of command_full process
+[2026-10-24 08:45:01.989] read output
+[2026-10-24 08:45:01.989] queuing output
+[2026-10-24 08:45:01.989] queued output
+[2026-10-24 08:45:01.989] dequeued output
+[2026-10-24 08:45:01.989] sending output
+[2026-10-24 08:45:01.989] sent output
+[2026-10-24 08:45:02.018] received input
+[2026-10-24 08:45:02.018] queued input
+[2026-10-24 08:45:02.018] dequeued input
+[2026-10-24 08:45:02.018] pushing input into pty
+[2026-10-24 08:45:02.018] pushed input
+[2026-10-24 08:45:02.018] begin command_full process
+[2026-10-24 08:45:02.018] End of command_full process
+[2026-10-24 08:45:02.018] read output
+[2026-10-24 08:45:02.018] queuing output
+[2026-10-24 08:45:02.018] queued output
+[2026-10-24 08:45:02.018] dequeued output
+[2026-10-24 08:45:02.018] sending output
+[2026-10-24 08:45:02.019] sent output
+[2026-10-24 08:45:02.064] received input
+[2026-10-24 08:45:02.064] queued input
+[2026-10-24 08:45:02.064] dequeued input
+[2026-10-24 08:45:02.064] pushing input into pty
+[2026-10-24 08:45:02.064] pushed input
+[2026-10-24 08:45:02.064] begin command_full process
+[2026-10-24 08:45:02.064] End of command_full process
+[2026-10-24 08:45:02.064] read output
+[2026-10-24 08:45:02.065] queuing output
+[2026-10-24 08:45:02.065] queued output
+[2026-10-24 08:45:02.065] dequeued output
+[2026-10-24 08:45:02.065] sending output
+[2026-10-24 08:45:02.065] sent output
+[2026-10-24 08:45:02.095] received input
+[2026-10-24 08:45:02.095] queued input
+[2026-10-24 08:45:02.096] dequeued input
+[2026-10-24 08:45:02.096] pushing input into pty
+[2026-10-24 08:45:02.096] pushed input
+[2026-10-24 08:45:02.096] begin command_full process
+[2026-10-24 08:45:02.096] End of command_full process
+[2026-10-24 08:45:02.096] read output
+[2026-10-24 08:45:02.096] queuing output
+[2026-10-24 08:45:02.096] queued output
+[2026-10-24 08:45:02.096] dequeued output
+[2026-10-24 08:45:02.096] sending output
+[2026-10-24 08:45:02.096] sent output
+[2026-10-24 08:45:02.129] received input
+[2026-10-24 08:45:02.129] queued input
+[2026-10-24 08:45:02.129] dequeued input
+[2026-10-24 08:45:02.129] pushing input into pty
+[2026-10-24 08:45:02.129] pushed input
+[2026-10-24 08:45:02.129] begin command_full process
+[2026-10-24 08:45:02.129] End of command_full process
+[2026-10-24 08:45:02.129] read output
+[2026-10-24 08:45:02.130] queuing output
+[2026-10-24 08:45:02.130] queued output
+[2026-10-24 08:45:02.130] dequeued output
+[2026-10-24 08:45:02.130] sending output
+[2026-10-24 08:45:02.130] sent output
+[2026-10-24 08:45:02.158] received input
+[2026-10-24 08:45:02.158] queued input
+[2026-10-24 08:45:02.159] dequeued input
+[2026-10-24 08:45:02.159] pushing input into pty
+[2026-10-24 08:45:02.159] pushed input
+[2026-10-24 08:45:02.159] begin command_full process
+[2026-10-24 08:45:02.159] End of command_full process
+[2026-10-24 08:45:02.159] read output
+[2026-10-24 08:45:02.159] queuing output
+[2026-10-24 08:45:02.159] queued output
+[2026-10-24 08:45:02.159] dequeued output
+[2026-10-24 08:45:02.159] sending output
+[2026-10-24 08:45:02.159] sent output
+[2026-10-24 08:45:02.191] received input
+[2026-10-24 08:45:02.191] queued input
+[2026-10-24 08:45:02.191] dequeued input
+[2026-10-24 08:45:02.191] pushing input into pty
+[2026-10-24 08:45:02.191] pushed input
+[2026-10-24 08:45:02.191] begin command_full process
+[2026-10-24 08:45:02.191] End of command_full process
+[2026-10-24 08:45:02.191] read output
+[2026-10-24 08:45:02.192] queuing output
+[2026-10-24 08:45:02.192] queued output
+[2026-10-24 08:45:02.192] dequeued output
+[2026-10-24 08:45:02.192] sending output
+[2026-10-24 08:45:02.192] sent output
+[2026-10-24 08:45:02.222] received input
+[2026-10-24 08:45:02.222] queued input
+[2026-10-24 08:45:02.222] dequeued input
+[2026-10-24 08:45:02.222] pushing input into pty
+[2026-10-24 08:45:02.222] pushed input
+[2026-10-24 08:45:02.222] begin command_full process
+[2026-10-24 08:45:02.222] End of command_full process
+[2026-10-24 08:45:02.223] read output
+[2026-10-24 08:45:02.223] queuing output
+[2026-10-24 08:45:02.223] queued output
+[2026-10-24 08:45:02.223] dequeued output
+[2026-10-24 08:45:02.223] sending output
+[2026-10-24 08:45:02.223] sent output
+[2026-10-24 08:45:02.253] received input
+[2026-10-24 08:45:02.253] queued input
+[2026-10-24 08:45:02.253] dequeued input
+[2026-10-24 08:45:02.253] pushing input into pty
+[2026-10-24 08:45:02.253] pushed input
+[2026-10-24 08:45:02.253] begin command_full process
+[2026-10-24 08:45:02.253] End of command_full process
+[2026-10-24 08:45:02.254] read output
+[2026-10-24 08:45:02.254] queuing output
+[2026-10-24 08:45:02.254] queued output
+[2026-10-24 08:45:02.254] dequeued output
+[2026-10-24 08:45:02.254] sending output
+[2026-10-24 08:45:02.254] sent output
+[2026-10-24 08:45:02.286] received input
+[2026-10-24 08:45:02.287] queued input
+[2026-10-24 08:45:02.287] dequeued input
+[2026-10-24 08:45:02.287] pushing input into pty
+[2026-10-24 08:45:02.287] pushed input
+[2026-10-24 08:45:02.287] begin command_full process
+[2026-10-24 08:45:02.287] End of command_full process
+[2026-10-24 08:45:02.287] read output
+[2026-10-24 08:45:02.287] queuing output
+[2026-10-24 08:45:02.288] queued output
+[2026-10-24 08:45:02.288] dequeued output
+[2026-10-24 08:45:02.288] sending output
+[2026-10-24 08:45:02.288] sent output
+[2026-10-24 08:45:02.321] received input
+[2026-10-24 08:45:02.322] queued input
+[2026-10-24 08:45:02.322] dequeued input
+[2026-10-24 08:45:02.322] pushing input into pty
+[2026-10-24 08:45:02.322] pushed input
+[2026-10-24 08:45:02.322] begin command_full process
+[2026-10-24 08:45:02.322] End of command_full process
+[2026-10-24 08:45:02.323] read output
+[2026-10-24 08:45:02.323] queuing output
+[2026-10-24 08:45:02.323] queued output
+[2026-10-24 08:45:02.323] dequeued output
+[2026-10-24 08:45:02.324] sending output
+[2026-10-24 08:45:02.324] sent output
+[2026-10-24 08:45:02.352] received input
+[2026-10-24 08:45:02.352] queued input
+[2026-10-24 08:45:02.353] dequeued input
+[2026-10-24 08:45:02.353] pushing input into pty
+[2026-10-24 08:45:02.353] pushed input
+[2026-10-24 08:45:02.353] begin command_full process
+[2026-10-24 08:45:02.353] End of command_full process
+[2026-10-24 08:45:02.353] read output
+[2026-10-24 08:45:02.354] queuing output
+[2026-10-24 08:45:02.354] queued output
+[2026-10-24 08:45:02.354] dequeued output
+[2026-10-24 08:45:02.354] sending output
+[2026-10-24 08:45:02.355] sent output
+[2026-10-24 08:45:02.382] received input
+[2026-10-24 08:45:02.383] queued input
+[2026-10-24 08:45:02.383] dequeued input
+[2026-10-24 08:45:02.383] pushing input into pty
+[2026-10-24 08:45:02.383] pushed input
+[2026-10-24 08:45:02.383] begin command_full process
+[2026-10-24 08:45:02.383] End of command_full process
+[2026-10-24 08:45:02.384] read output
+[2026-10-24 08:45:02.384] queuing output
+[2026-10-24 08:45:02.385] queued output
+[2026-10-24 08:45:02.385] dequeued output
+[2026-10-24 08:45:02.385] sending output
+[2026-10-24 08:45:02.385] sent output
+[2026-10-24 08:45:02.430] received input
+[2026-10-24 08:45:02.430] queued input
+[2026-10-24 08:45:02.430] dequeued input
+[2026-10-24 08:45:02.431] pushing input into pty
+[2026-10-24 08:45:02.431] pushed input
+[2026-10-24 08:45:02.431] begin command_full process
+[2026-10-24 08:45:02.431] End of command_full process
+[2026-10-24 08:45:02.431] read output
+[2026-10-24 08:45:02.431] queuing output
+[2026-10-24 08:45:02.432] queued output
+[2026-10-24 08:45:02.432] dequeued output
+[2026-10-24 08:45:02.432] sending output
+[2026-10-24 08:45:02.432] sent output
+[2026-10-24 08:45:02.459] received input
+[2026-10-24 08:45:02.460] queued input
+[2026-10-24 08:45:02.460] dequeued input
+[2026-10-24 08:45:02.460] pushing input into pty
+[2026-10-24 08:45:02.460] pushed input
+[2026-10-24 08:45:02.461] begin command_full process
+[2026-10-24 08:45:02.461] End of command_full process
+[2026-10-24 08:45:02.461] read output
+[2026-10-24 08:45:02.461] queuing output
+[2026-10-24 08:45:02.461] queued output
+[2026-10-24 08:45:02.462] dequeued output
+[2026-10-24 08:45:02.462] sending output
+[2026-10-24 08:45:02.462] sent output
+[2026-10-24 08:45:02.498] received input
+[2026-10-24 08:45:02.498] queued input
+[2026-10-24 08:45:02.499] dequeued input
+[2026-10-24 08:45:02.499] pushing input into pty
+[2026-10-24 08:45:02.499] pushed input
+[2026-10-24 08:45:02.499] begin command_full process
+[2026-10-24 08:45:02.499] End of command_full process
+[2026-10-24 08:45:02.499] read output
+[2026-10-24 08:45:02.499] queuing output
+[2026-10-24 08:45:02.500] queued output
+[2026-10-24 08:45:02.500] dequeued output
+[2026-10-24 08:45:02.500] sending output
+[2026-10-24 08:45:02.500] sent output
+[2026-10-24 08:45:02.521] received input
+[2026-10-24 08:45:02.521] queued input
+[2026-10-24 08:45:02.521] dequeued input
+[2026-10-24 08:45:02.521] pushing input into pty
+[2026-10-24 08:45:02.521] pushed input
+[2026-10-24 08:45:02.521] begin command_full process
+[2026-10-24 08:45:02.521] End of command_full process
+[2026-10-24 08:45:02.521] read output
+[2026-10-24 08:45:02.522] queuing output
+[2026-10-24 08:45:02.522] queued output
+[2026-10-24 08:45:02.522] dequeued output
+[2026-10-24 08:45:02.522] sending output
+[2026-10-24 08:45:02.522] sent output
+[2026-10-24 08:45:02.551] received input
+[2026-10-24 08:45:02.552] queued input
+[2026-10-24 08:45:02.552] dequeued input
+[2026-10-24 08:45:02.552] pushing input into pty
+[2026-10-24 08:45:02.553] pushed input
+[2026-10-24 08:45:02.553] begin command_full process
+[2026-10-24 08:45:02.553] End of command_full process
+[2026-10-24 08:45:02.553] read output
+[2026-10-24 08:45:02.553] queuing output
+[2026-10-24 08:45:02.553] queued output
+[2026-10-24 08:45:02.553] dequeued output
+[2026-10-24 08:45:02.553] sending output
+[2026-10-24 08:45:02.554] sent output
+[2026-10-24 08:45:02.583] received input
+[2026-10-24 08:45:02.583] queued input
+[2026-10-24 08:45:02.583] dequeued input
+[2026-10-24 08:45:02.583] pushing input into pty
+[2026-10-24 08:45:02.583] pushed input
+[2026-10-24 08:45:02.583] begin command_full process
+[2026-10-24 08:45:02.583] End of command_full process
+[2026-10-24 08:45:02.583] read output
+[2026-10-24 08:45:02.583] queuing output
+[2026-10-24 08:45:02.584] queued output
+[2026-10-24 08:45:02.584] dequeued output
+[2026-10-24 08:45:02.584] sending output
+[2026-10-24 08:45:02.584] sent output
+[2026-10-24 08:45:02.630] received input
+[2026-10-24 08:45:02.631] queued input
+[2026-10-24 08:45:02.631] dequeued input
+[2026-10-24 08:45:02.631] pushing input into pty
+[2026-10-24 08:45:02.631] pushed input
+[2026-10-24 08:45:02.631] begin command_full process
+[2026-10-24 08:45:02.631] End of command_full process
+[2026-10-24 08:45:02.631] read output
+[2026-10-24 08:45:02.632] queuing output
+[2026-10-24 08:45:02.632] queued output
+[2026-10-24 08:45:02.632] dequeued output
+[2026-10-24 08:45:02.632] sending output
+[2026-10-24 08:45:02.633] sent output
+[2026-10-24 08:45:02.658] received input
+[2026-10-24 08:45:02.659] queued input
+[2026-10-24 08:45:02.659] dequeued input
+[2026-10-24 08:45:02.659] pushing input into pty
+[2026-10-24 08:45:02.659] pushed input
+[2026-10-24 08:45:02.660] begin command_full process
+[2026-10-24 08:45:02.660] End of command_full process
+[2026-10-24 08:45:02.660] read output
+[2026-10-24 08:45:02.660] queuing output
+[2026-10-24 08:45:02.660] queued output
+[2026-10-24 08:45:02.661] dequeued output
+[2026-10-24 08:45:02.661] sending output
+[2026-10-24 08:45:02.661] sent output
+[2026-10-24 08:45:02.689] received input
+[2026-10-24 08:45:02.689] queued input
+[2026-10-24 08:45:02.689] dequeued input
+[2026-10-24 08:45:02.689] pushing input into pty
+[2026-10-24 08:45:02.689] pushed input
+[2026-10-24 08:45:02.689] begin command_full process
+[2026-10-24 08:45:02.689] End of command_full process
+[2026-10-24 08:45:02.690] read output
+[2026-10-24 08:45:02.690] queuing output
+[2026-10-24 08:45:02.690] queued output
+[2026-10-24 08:45:02.691] dequeued output
+[2026-10-24 08:45:02.691] sending output
+[2026-10-24 08:45:02.691] sent output
+[2026-10-24 08:45:02.719] received input
+[2026-10-24 08:45:02.719] queued input
+[2026-10-24 08:45:02.719] dequeued input
+[2026-10-24 08:45:02.719] pushing input into pty
+[2026-10-24 08:45:02.719] pushed input
+[2026-10-24 08:45:02.719] begin command_full process
+[2026-10-24 08:45:02.719] End of command_full process
+[2026-10-24 08:45:02.719] read output
+[2026-10-24 08:45:02.720] queuing output
+[2026-10-24 08:45:02.720] queued output
+[2026-10-24 08:45:02.720] dequeued output
+[2026-10-24 08:45:02.720] sending output
+[2026-10-24 08:45:02.720] sent output
+[2026-10-24 08:45:02.751] received input
+[2026-10-24 08:45:02.751] queued input
+[2026-10-24 08:45:02.751] dequeued input
+[2026-10-24 08:45:02.752] pushing input into pty
+[2026-10-24 08:45:02.752] pushed input
+[2026-10-24 08:45:02.752] begin command_full process
+[2026-10-24 08:45:02.752] End of command_full process
+[2026-10-24 08:45:02.752] read output
+[2026-10-24 08:45:02.752] queuing output
+[2026-10-24 08:45:02.752] queued output
+[2026-10-24 08:45:02.752] dequeued output
+[2026-10-24 08:45:02.753] sending output
+[2026-10-24 08:45:02.753] sent output
+[2026-10-24 08:45:02.782] received input
+[2026-10-24 08:45:02.782] queued input
+[2026-10-24 08:45:02.782] dequeued input
+[2026-10-24 08:45:02.782] pushing input into pty
+[2026-10-24 08:45:02.783] pushed input
+[2026-10-24 08:45:02.783] begin command_full process
+[2026-10-24 08:45:02.783] End of command_full process
+[2026-10-24 08:45:02.783] read output
+[2026-10-24 08:45:02.783] queuing output
+[2026-10-24 08:45:02.783] queued output
+[2026-10-24 08:45:02.784] dequeued output
+[2026-10-24 08:45:02.784] sending output
+[2026-10-24 08:45:02.784] sent output
+[2026-10-24 08:45:02.813] received input
+[2026-10-24 08:45:02.814] queued input
+[2026-10-24 08:45:02.814] dequeued input
+[2026-10-24 08:45:02.814] pushing input into pty
+[2026-10-24 08:45:02.814] pushed input
+[2026-10-24 08:45:02.814] begin command_full process
+[2026-10-24 08:45:02.814] End of command_full process
+[2026-10-24 08:45:02.815] read output
+[2026-10-24 08:45:02.815] queuing output
+[2026-10-24 08:45:02.815] queued output
+[2026-10-24 08:45:02.815] dequeued output
+[2026-10-24 08:45:02.815] sending output
+[2026-10-24 08:45:02.816] sent output
+[2026-10-24 08:45:02.843] received input
+[2026-10-24 08:45:02.843] queued input
+[2026-10-24 08:45:02.844] dequeued input
+[2026-10-24 08:45:02.844] pushing input into pty
+[2026-10-24 08:45:02.844] pushed input
+[2026-10-24 08:45:02.844] begin command_full process
+[2026-10-24 08:45:02.844] End of command_full process
+[2026-10-24 08:45:02.844] read output
+[2026-10-24 08:45:02.845] queuing output
+[2026-10-24 08:45:02.845] queued output
+[2026-10-24 08:45:02.845] dequeued output
+[2026-10-24 08:45:02.846] sending output
+[2026-10-24 08:45:02.846] sent output
+[2026-10-24 08:45:02.889] received input
+[2026-10-24 08:45:02.889] queued input
+[2026-10-24 08:45:02.889] dequeued input
+[2026-10-24 08:45:02.890] pushing input into pty
+[2026-10-24 08:45:02.890] pushed input
+[2026-10-24 08:45:02.890] begin command_full process
+[2026-10-24 08:45:02.890] End of command_full process
+[2026-10-24 08:45:02.890] read output
+[2026-10-24 08:45:02.891] queuing output
+[2026-10-24 08:45:02.891] queued output
+[2026-10-24 08:45:02.891] dequeued output
+[2026-10-24 08:45:02.891] sending output
+[2026-10-24 08:45:02.891] sent output
+[2026-10-24 08:45:02.919] received input
+[2026-10-24 08:45:02.919] queued input
+[2026-10-24 08:45:02.919] dequeued input
+[2026-10-24 08:45:02.920] pushing input into pty
+[2026-10-24 08:45:02.920] pushed input
+[2026-10-24 08:45:02.920] begin command_full process
+[2026-10-24 08:45:02.920] End of command_full process
+[2026-10-24 08:45:02.920] read output
+[2026-10-24 08:45:02.921] queuing output
+[2026-10-24 08:45:02.921] queued output
+[2026-10-24 08:45:02.921] dequeued output
+[2026-10-24 08:45:02.921] sending output
+[2026-10-24 08:45:02.922] sent output
+[2026-10-24 08:45:02.951] received input
+[2026-10-24 08:45:02.952] queued input
+[2026-10-24 08:45:02.952] dequeued input
+[2026-10-24 08:45:02.952] pushing input into pty
+[2026-10-24 08:45:02.952] pushed input
+[2026-10-24 08:45:02.952] begin command_full process
+[2026-10-24 08:45:02.952] End of command_full process
+[2026-10-24 08:45:02.953] read output
+[2026-10-24 08:45:02.953] queuing output
+[2026-10-24 08:45:02.953] queued output
+[2026-10-24 08:45:02.953] dequeued output
+[2026-10-24 08:45:02.954] sending output
+[2026-10-24 08:45:02.954] sent output
+[2026-10-24 08:45:02.983] received input
+[2026-10-24 08:45:02.984] queued input
+[2026-10-24 08:45:02.984] dequeued input
+[2026-10-24 08:45:02.984] pushing input into pty
+[2026-10-24 08:45:02.984] pushed input
+[2026-10-24 08:45:02.984] begin command_full process
+[2026-10-24 08:45:02.984] End of command_full process
+[2026-10-24 08:45:02.984] read output
+[2026-10-24 08:45:02.985] queuing output
+[2026-10-24 08:45:02.985] queued output
+[2026-10-24 08:45:02.985] dequeued output
+[2026-10-24 08:45:02.985] sending output
+[2026-10-24 08:45:02.985] sent output
+[2026-10-24 08:45:03.013] received input
+[2026-10-24 08:45:03.014] queued input
+[2026-10-24 08:45:03.014] dequeued input
+[2026-10-24 08:45:03.014] pushing input into pty
+[2026-10-24 08:45:03.014] pushed input
+[2026-10-24 08:45:03.014] begin command_full process
+[2026-10-24 08:45:03.014] End of command_full process
+[2026-10-24 08:45:03.015] read output
+[2026-10-24 08:45:03.015] queuing output
+[2026-10-24 08:45:03.015] queued output
+[2026-10-24 08:45:03.015] dequeued output
+[2026-10-24 08:45:03.016] sending output
+[2026-10-24 08:45:03.016] sent output
+[2026-10-24 08:45:03.045] received input
+[2026-10-24 08:45:03.045] queued input
+[2026-10-24 08:45:03.045] dequeued input
+[2026-10-24 08:45:03.045] pushing input into pty
+[2026-10-24 08:45:03.045] pushed input
+[2026-10-24 08:45:03.046] begin command_full process
+[2026-10-24 08:45:03.046] End of command_full process
+[2026-10-24 08:45:03.046] read output
+[2026-10-24 08:45:03.046] queuing output
+[2026-10-24 08:45:03.047] queued output
+[2026-10-24 08:45:03.047] dequeued output
+[2026-10-24 08:45:03.047] sending output
+[2026-10-24 08:45:03.047] sent output
+[2026-10-24 08:45:03.077] received input
+[2026-10-24 08:45:03.078] queued input
+[2026-10-24 08:45:03.078] dequeued input
+[2026-10-24 08:45:03.078] pushing input into pty
+[2026-10-24 08:45:03.078] pushed input
+[2026-10-24 08:45:03.078] begin command_full process
+[2026-10-24 08:45:03.078] End of command_full process
+[2026-10-24 08:45:03.079] read output
+[2026-10-24 08:45:03.079] queuing output
+[2026-10-24 08:45:03.079] queued output
+[2026-10-24 08:45:03.079] dequeued output
+[2026-10-24 08:45:03.079] sending output
+[2026-10-24 08:45:03.080] sent output
+[2026-10-24 08:45:03.122] received input
+[2026-10-24 08:45:03.122] queued input
+[2026-10-24 08:45:03.123] dequeued input
+[2026-10-24 08:45:03.123] pushing input into pty
+[2026-10-24 08:45:03.123] pushed input
+[2026-10-24 08:45:03.123] begin command_full process
+[2026-10-24 08:45:03.123] End of command_full process
+[2026-10-24 08:45:03.123] read output
+[2026-10-24 08:45:03.124] queuing output
+[2026-10-24 08:45:03.124] queued output
+[2026-10-24 08:45:03.124] dequeued output
+[2026-10-24 08:45:03.124] sending output
+[2026-10-24 08:45:03.124] sent output
+[2026-10-24 08:45:03.600] received input
+[2026-10-24 08:45:03.600] queued input
+[2026-10-24 08:45:03.600] dequeued input
+[2026-10-24 08:45:03.601] pushing input into pty
+[2026-10-24 08:45:03.601] pushed input
+[2026-10-24 08:45:03.601] begin command_full process
+[2026-10-24 08:45:03.601] End of command_full process
+[2026-10-24 08:45:03.601] read output
+[2026-10-24 08:45:03.601] queuing output
+[2026-10-24 08:45:03.602] queued output
+[2026-10-24 08:45:03.602] dequeued output
+[2026-10-24 08:45:03.602] sending output
+[2026-10-24 08:45:03.602] sent output
+[2026-10-24 08:45:04.751] received input
+[2026-10-24 08:45:04.751] queued input
+[2026-10-24 08:45:04.751] dequeued input
+[2026-10-24 08:45:04.751] pushing input into pty
+[2026-10-24 08:45:04.751] pushed input
+[2026-10-24 08:45:04.751] begin command_full process
+[2026-10-24 08:45:04.751] Terminal 3: sdsdsdffffffffffffffffff
+[2026-10-24 08:45:04.751] End of command_full process
+[2026-10-24 08:45:04.751] dequeued output
+[2026-10-24 08:45:04.751] sending output
+[2026-10-24 08:45:04.751] sent output
+[2026-10-24 08:45:04.752] read output
+[2026-10-24 08:45:04.752] queuing output
+[2026-10-24 08:45:04.752] queued output
+[2026-10-24 08:45:04.773] dequeued output
+[2026-10-24 08:45:04.773] sending output
+[2026-10-24 08:45:04.773] sent output
+[2026-10-24 08:47:25.058] Server started
+[2026-10-24 09:18:08.812] Server started
+[2026-10-24 09:18:15.131] 127.0.0.1 | GET /remote | incoming
+[2026-10-24 09:18:15.132] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-24 09:18:15.214] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-24 09:18:15.220] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-24 09:18:15.222] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-24 09:18:15.222] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-24 09:18:15.228] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-24 09:18:15.228] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-24 09:18:15.238] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-24 09:18:15.238] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-24 09:18:15.319] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-24 09:18:15.320] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-24 09:18:15.359] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-24 09:18:15.359] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-24 09:18:15.363] Terminal 0: Ready
+[2026-10-24 09:18:15.364] WS 0: Open
+[2026-10-24 09:18:15.379] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-24 09:18:15.379] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-24 09:18:15.381] Terminal 1: Ready
+[2026-10-24 09:18:15.381] WS 1: Open
+[2026-10-24 09:18:15.391] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-24 09:18:15.391] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-24 09:18:15.394] Terminal 2: Ready
+[2026-10-24 09:18:15.394] WS 2: Open
+[2026-10-24 09:18:15.412] 127.0.0.1 | GET /ws/3 | incoming
+[2026-10-24 09:18:15.412] 127.0.0.1 | GET /ws/3 | 101 Switching Protocols
+[2026-10-24 09:18:15.416] Terminal 3: Ready
+[2026-10-24 09:18:15.416] WS 3: Open
+[2026-10-24 09:24:45.794] Server started
+[2026-10-24 09:24:49.912] 127.0.0.1 | GET /remote | incoming
+[2026-10-24 09:24:49.912] 127.0.0.1 | GET /remote | 200 OK
+[2026-10-24 09:24:49.980] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | incoming
+[2026-10-24 09:24:49.981] 127.0.0.1 | GET /node_modules/@xterm/xterm/lib/xterm.js | 200 OK
+[2026-10-24 09:24:49.984] 127.0.0.1 | GET /styles/remote.css | incoming
+[2026-10-24 09:24:49.984] 127.0.0.1 | GET /styles/remote.css | 200 OK
+[2026-10-24 09:24:49.985] 127.0.0.1 | GET /scripts/remote.js | incoming
+[2026-10-24 09:24:49.985] 127.0.0.1 | GET /scripts/remote.js | 200 OK
+[2026-10-24 09:24:49.988] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | incoming
+[2026-10-24 09:24:49.988] 127.0.0.1 | GET /node_modules/@xterm/xterm/css/xterm.css | 200 OK
+[2026-10-24 09:24:50.044] 127.0.0.1 | GET /outputhist | incoming
+[2026-10-24 09:24:50.045] 127.0.0.1 | GET /outputhist | 200 OK
+[2026-10-24 09:24:50.070] 127.0.0.1 | GET /ws/0 | incoming
+[2026-10-24 09:24:50.070] 127.0.0.1 | GET /ws/0 | 101 Switching Protocols
+[2026-10-24 09:24:50.072] Terminal 0: Ready
+[2026-10-24 09:24:50.072] WS 0: Open
+[2026-10-24 09:24:50.088] 127.0.0.1 | GET /ws/1 | incoming
+[2026-10-24 09:24:50.088] 127.0.0.1 | GET /ws/1 | 101 Switching Protocols
+[2026-10-24 09:24:50.092] Terminal 1: Ready
+[2026-10-24 09:24:50.093] WS 1: Open
+[2026-10-24 09:24:50.112] 127.0.0.1 | GET /ws/2 | incoming
+[2026-10-24 09:24:50.112] 127.0.0.1 | GET /ws/2 | 101 Switching Protocols
+[2026-10-24 09:24:50.114] Terminal 2: Ready
+[2026-10-24 09:24:50.114] WS 2: Open
+[2026-10-24 09:24:50.131] 127.0.0.1 | GET /ws/3 | incoming
+[2026-10-24 09:24:50.131] 127.0.0.1 | GET /ws/3 | 101 Switching Protocols
+[2026-10-24 09:24:50.133] Terminal 3: Ready
+[2026-10-24 09:24:50.133] WS 3: Open

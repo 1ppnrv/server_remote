@@ -17,6 +17,7 @@ async-std = "1.13.2"
 tower-http = { version = "0.6", features = ["trace"] }
 tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
 tower = "0.5.3"
+time-format = "1.2.1"
 
 [profile.release]
 lto = true

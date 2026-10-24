@@ -1,5 +1,4 @@
 use async_std::task;
-use chrono::Local;
 use portable_pty::{CommandBuilder, PtySize, native_pty_system};
 use std::{
     env::consts,
@@ -16,8 +15,10 @@ use tokio::sync::{
 };
 
 pub fn log(arg: String) {
-    let time = Local::now().format("%Y-%m-%d %H:%M:%S").to_string();
-    let to_log = format!("[{}] {}\n", time, arg.trim_end());
+    let time_object = time_format::now_ms().unwrap();
+	let time_string = time_format::strftime_ms_utc("%Y-%m-%d %H:%M:%S.{ms}", time_object).unwrap();
+
+    let to_log = format!("[{}] {}\n", time_string, arg.trim_end());
     print!("{}", to_log);
 
     let mut file = OpenOptions::new()
@@ -62,7 +63,7 @@ pub async fn new_pty(
 
     let pair = pty_system
         .openpty(PtySize {
-            rows: 24,
+            rows: 40,
             cols: 80,
             pixel_width: 0,
             pixel_height: 0,
@@ -89,8 +90,6 @@ pub async fn new_pty(
         .unwrap_or_else(|_| panic!("unable to clone reader for terminal{}", id));
 
     let running_clone: Arc<Mutex<Vec<u8>>> = running.clone();
-    let mut output_clone = output.clone();
-    let output_list_clone = outputs_list.clone();
 
     //output reading and sending in queue
     tokio::task::spawn_blocking(move || {
@@ -100,7 +99,9 @@ pub async fn new_pty(
                 let mut buf = [0u8; 1024];
 
                 let n = match reader.read(&mut buf) {
-                    Ok(n) => n,
+                    Ok(n) => {
+						n
+					},
                     Err(e) => {
                         log(format!(
                             "Terminal {}: Failed to read output buffer: {}",
@@ -133,28 +134,28 @@ pub async fn new_pty(
             }
             // log("sending output".to_string());
             match output.blocking_send(term_output.clone()) {
-                Ok(_) => term_output = "pklk".to_string(),
+                Ok(_) => {
+					term_output = "pklk".to_string();
+				},
 
                 Err(_) => {
-                    thread::sleep(time::Duration::from_millis(500));
+                    thread::sleep(time::Duration::from_millis(100));
                     task::block_on(async {
                         let new_output = outputs_list.lock().await;
                         output = new_output[id].clone();
                     });
                 }
             }
-            thread::sleep(time::Duration::from_millis(100));
         }
     });
 
     //command input from sender
     tokio::spawn(async move {
-        let mut command_full = String::new();
-        let mut last_command = String::new();
         loop {
-            let mut command_full_clone = command_full.clone();
             let command = match input.recv().await {
-                Some(cmd) => cmd,
+                Some(cmd) => {
+					cmd
+				},
                 None => break,
             };
 
@@ -170,50 +171,7 @@ pub async fn new_pty(
                 }
             }
 
-            command_full_clone.push_str(command.as_str());
-
-            if command_full_clone.contains("\r") || command_full_clone.contains("\n") {
-                log(format!("Terminal {}: {}", id, command_full_clone.clone()));
-                let mut title = "termtitle".to_string();
-                title.push_str(&command_full_clone);
-                let output_clone2 = output_clone.clone();
-
-                match output_clone2.send(title.clone()).await {
-                    Ok(_) => {}
-
-                    Err(_) => {
-                        last_command = command_full_clone.clone();
-                        thread::sleep(time::Duration::from_millis(500));
-                        let new_output = output_list_clone.lock().await;
-                        output_clone = new_output[id].clone();
-                    }
-                }
-                command_full_clone = String::new();
-                task::spawn(async move {
-                    let mut file = File::create(format!("titles/title{}.txt", id).as_str())
-                        .expect("failed to replace title file");
-                    file.write_all(title.as_bytes()).unwrap_or_else(|_| {
-                        panic!("unable to write title of terminal {} in title file", id)
-                    });
-                });
-            }
-
-            if !last_command.is_empty() {
-                match output_clone.send(last_command.clone()).await {
-                    Ok(_) => {
-                        last_command = String::new();
-                    }
-
-                    Err(_) => {
-                        thread::sleep(time::Duration::from_millis(500));
-                        let new_output = output_list_clone.lock().await;
-                        output_clone = new_output[id].clone();
-                    }
-                }
-            }
-
-            tokio::time::sleep(time::Duration::from_millis(100)).await;
-            command_full = command_full_clone.clone()
+            tokio::time::sleep(time::Duration::from_millis(5)).await;
         }
     });
 

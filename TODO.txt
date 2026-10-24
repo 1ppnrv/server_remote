@@ -1,1 +1,3 @@
-killterm => kill tout/ferme tout
+killterm => kill tout/ferme tout et décale les terminaux
+
+fix le titre des terminaux
